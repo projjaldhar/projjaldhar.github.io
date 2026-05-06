@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="StoryGlobe — 3D Gateway to Global Folklore. Project detail by Projjal Dhar">
+  <title>StoryGlobe — Projjal Dhar</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="project.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav scrolled" id="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo" aria-label="Home">PD</a>
+      <ul class="nav-links">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#projects">Projects</a></li>
+        <li><a href="index.html#skills">Skills</a></li>
+        <li><a href="index.html#contact" class="nav-cta">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- Project Hero -->
+    <section class="proj-hero">
+      <div class="container">
+        <a href="index.html#projects" class="back-link fade-in" aria-label="Back to all projects">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/>
+          </svg>
+          All Projects
+        </a>
+        <div class="proj-hero-content">
+          <div class="proj-hero-left fade-in">
+            <div class="proj-number" aria-hidden="true">Project 04</div>
+            <h1 class="proj-title">StoryGlobe —<br><span class="accent">3D Gateway to Global Folklore</span></h1>
+            <p class="proj-subtitle">An interactive 3D globe where you explore folk tales, oral traditions, and legendary stories from cultures around the world — tap any country flag to step inside its stories.</p>
+            <div class="proj-tags">
+              <span class="tag">Three.js</span>
+              <span class="tag">React 18</span>
+              <span class="tag">TypeScript</span>
+              <span class="tag">Supabase</span>
+              <span class="tag">Mobile-first</span>
+            </div>
+          </div>
+          <div class="proj-hero-right fade-in">
+            <div class="proj-stat-grid">
+              <div class="proj-stat">
+                <span class="proj-stat-num">14</span>
+                <span class="proj-stat-label">Countries &amp; cultures</span>
+              </div>
+              <div class="proj-stat">
+                <span class="proj-stat-num">3D</span>
+                <span class="proj-stat-label">WebGL globe in the browser</span>
+              </div>
+              <div class="proj-stat">
+                <span class="proj-stat-num">0</span>
+                <span class="proj-stat-label">Sign-up required</span>
+              </div>
+              <div class="proj-stat">
+                <span class="proj-stat-num">Live</span>
+                <span class="proj-stat-label">Deployed on Vercel</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Content -->
+    <div class="proj-body">
+      <div class="container">
+        <div class="proj-layout">
+
+          <!-- Main content -->
+          <div class="proj-main">
+
+            <div class="proj-section fade-in">
+              <h2 class="proj-section-title">Overview</h2>
+              <p class="proj-text">Folk tales, oral traditions, and legendary stories are among humanity's oldest forms of knowledge-sharing — but they've never had an immersive, globally connected home on the web. StoryGlobe changes that by turning the Earth itself into a navigation interface. Instead of searching or scrolling, users spin a 3D globe, land on a country, and are immediately drawn into that culture's stories and storytellers.</p>
+              <p class="proj-text">The app is fully mobile-first, requires no account, and rewards curiosity with a Passport badge system that tracks which countries you've explored and how many stories you've read. Every detail — from the serif typography to the illustrated tale pages — is designed to make reading feel like an event, not a chore.</p>
+            </div>
+
+            <div class="proj-section fade-in">
+              <h2 class="proj-section-title">The Problem</h2>
+              <div class="problem-grid">
+                <div class="problem-card">
+                  <div class="problem-icon" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                  </div>
+                  <h3>Stories siloed by culture</h3>
+                  <p>Global folklore lives in scattered books, Wikipedia stubs, and paywalled databases — there's no single immersive place to explore it all.</p>
+                </div>
+                <div class="problem-card">
+                  <div class="problem-icon" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                  </div>
+                  <h3>Flat, scroll-based UX</h3>
+                  <p>Lists and search boxes strip the sense of discovery. Reading about another culture should feel like travel, not a database query.</p>
+                </div>
+                <div class="problem-card">
+                  <div class="problem-icon" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                  </div>
+                  <h3>Signup friction kills curiosity</h3>
+                  <p>Requiring an account before showing content is the fastest way to lose a curious user who just wants to read one story.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="proj-section fade-in">
+              <h2 class="proj-section-title">Solution &amp; Architecture</h2>
+              <p class="proj-text">The globe is the interface. A Three.js sphere with a real Earth texture serves as the homepage — country flags are pinned at their real-world coordinates, and dragging the globe to find them is itself an act of discovery. Tapping a flag opens a bottom drawer with that country's stories and authors; tapping a story leads into a full illustrated reading experience.</p>
+              <div class="arch-flow">
+                <div class="arch-step">
+                  <span class="arch-step-num">1</span>
+                  <div>
+                    <strong>Globe Render</strong>
+                    <p>Three.js sphere with Earth texture, country flag markers, and drag-to-spin controls</p>
+                  </div>
+                </div>
+                <div class="arch-arrow" aria-hidden="true">→</div>
+                <div class="arch-step">
+                  <span class="arch-step-num">2</span>
+                  <div>
+                    <strong>Country Selection</strong>
+                    <p>Tap a flag to open a bottom drawer with stories and authors from that culture</p>
+                  </div>
+                </div>
+                <div class="arch-arrow" aria-hidden="true">→</div>
+                <div class="arch-step">
+                  <span class="arch-step-num">3</span>
+                  <div>
+                    <strong>Story Discovery</strong>
+                    <p>Supabase PostgreSQL serves stories, authors, and tale content via auto-generated REST APIs</p>
+                  </div>
+                </div>
+                <div class="arch-arrow" aria-hidden="true">→</div>
+                <div class="arch-step">
+                  <span class="arch-step-num">4</span>
+                  <div>
+                    <strong>Reading &amp; Passport</strong>
+                    <p>Full illustrated tale pages; progress saved locally and reflected in the badge system</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="proj-section fade-in">
+              <h2 class="proj-section-title">Key Features</h2>
+              <ul class="feature-list">
+                <li class="feature-item">
+                  <span class="feature-dot" aria-hidden="true"></span>
+                  <div>
+                    <strong>Interactive 3D globe</strong> — WebGL-rendered Earth with drag-to-spin, pinch-to-zoom, and country flag markers pinned at real-world coordinates
+                  </div>
+                </li>
+                <li class="feature-item">
+                  <span class="feature-dot" aria-hidden="true"></span>
+                  <div>
+                    <strong>14 countries of folklore</strong> — curated folk tales, oral traditions, and legendary stories with cultural context, moral, and origin for each
+                  </div>
+                </li>
+                <li class="feature-item">
+                  <span class="feature-dot" aria-hidden="true"></span>
+                  <div>
+                    <strong>Passport badge system</strong> — tracks which countries you've visited and stories you've read, rewarding curiosity without requiring an account
+                  </div>
+                </li>
+                <li class="feature-item">
+                  <span class="feature-dot" aria-hidden="true"></span>
+                  <div>
+                    <strong>No sign-up required</strong> — progress is persisted in localStorage so users jump straight into stories without any friction
+                  </div>
+                </li>
+                <li class="feature-item">
+                  <span class="feature-dot" aria-hidden="true"></span>
+                  <div>
+                    <strong>Mobile-first design</strong> — responsive camera logic adapts FOV and Z-distance to portrait and landscape screens; bottom drawer feels native on a phone
+                  </div>
+                </li>
+                <li class="feature-item">
+                  <span class="feature-dot" aria-hidden="true"></span>
+                  <div>
+                    <strong>Privacy-first analytics</strong> — Vercel Analytics tracks <code>country_opened</code> and <code>story_opened</code> events with no third-party cookies or consent banners
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="proj-section fade-in">
+              <h2 class="proj-section-title">Impact &amp; Outcomes</h2>
+              <p class="proj-text">StoryGlobe is live at <a href="https://storyglobe.vercel.app" target="_blank" rel="noopener noreferrer" class="accent">storyglobe.vercel.app</a>. Vercel Analytics tracks two key custom events — <strong>country_opened</strong> (which cultures users are most curious about) and <strong>story_opened</strong> (which stories get read vs. skipped) — providing a clear picture of engagement across the full funnel, from globe to reading view.</p>
+              <p class="proj-text">The product decision to remove login entirely — relying on localStorage for progress — proved critical. Drop-off at the entry point was minimal, validating the hypothesis that curiosity-driven products live or die by how quickly users can reach their first moment of value. The Passport system provided the retention hook without the cost of an auth flow.</p>
+            </div>
+
+          </div>
+
+          <!-- Sidebar -->
+          <aside class="proj-sidebar fade-in" aria-label="Project details">
+            <div class="sidebar-card">
+              <h3 class="sidebar-title">Tech Stack</h3>
+              <ul class="sidebar-tags">
+                <li class="skill-tag accent-tag">Three.js / WebGL</li>
+                <li class="skill-tag accent-tag">React 18 + TypeScript</li>
+                <li class="skill-tag accent-tag">Supabase (PostgreSQL)</li>
+                <li class="skill-tag">Vite + SWC</li>
+                <li class="skill-tag">Tailwind CSS</li>
+                <li class="skill-tag">Framer Motion</li>
+                <li class="skill-tag">TanStack Query v5</li>
+                <li class="skill-tag">Vercel Analytics</li>
+              </ul>
+            </div>
+            <div class="sidebar-card">
+              <h3 class="sidebar-title">My Role</h3>
+              <p class="sidebar-text">Designed and engineered end-to-end — conceived the globe-as-interface concept, built the Three.js rendering pipeline, architected the Supabase data layer, designed the mobile-first UI, and shipped to production on Vercel.</p>
+            </div>
+            <div class="sidebar-card">
+              <h3 class="sidebar-title">Live Project</h3>
+              <a href="https://storyglobe.vercel.app" target="_blank" rel="noopener noreferrer" class="sidebar-proj-link">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                <span>storyglobe.vercel.app</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+            <div class="sidebar-card">
+              <h3 class="sidebar-title">Other Projects</h3>
+              <a href="project-1.html" class="sidebar-proj-link">
+                <span class="sidebar-proj-num">01</span>
+                <span>AI Chatbot with Database Integration</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+              <a href="project-2.html" class="sidebar-proj-link">
+                <span class="sidebar-proj-num">02</span>
+                <span>AI Voice Assistant with Phone Support</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+              <a href="project-3.html" class="sidebar-proj-link">
+                <span class="sidebar-proj-num">03</span>
+                <span>Autonomous AI Agent for Job Search</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+          </aside>
+
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <p>&copy; 2025 Projjal Dhar &middot; Dublin, Ireland</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
