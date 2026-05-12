@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="AI Voice Assistant with Phone Support — Project detail by Projjal Dhar">
-  <title>AI Voice Assistant with Phone Support — Projjal Dhar</title>
+  <meta name="description" content="Podcast RAG System with Vector Search — Project detail by Projjal Dhar">
+  <title>Podcast RAG System with Vector Search — Projjal Dhar</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="project.css">
 </head>
@@ -37,34 +37,34 @@
         </a>
         <div class="proj-hero-content">
           <div class="proj-hero-left fade-in">
-            <div class="proj-number" aria-hidden="true">Project 02</div>
-            <h1 class="proj-title">AI Voice Assistant<br><span class="accent">with Phone Support</span></h1>
-            <p class="proj-subtitle">A voice-native AI agent that handles inbound support calls end-to-end — understanding natural speech, querying systems, and resolving issues autonomously.</p>
+            <div class="proj-number" aria-hidden="true">Project 05</div>
+            <h1 class="proj-title">Podcast RAG System<br><span class="accent">with Vector Search</span></h1>
+            <p class="proj-subtitle">A production-grade RAG pipeline that processes podcast audio end-to-end — transcribing episodes, generating vector embeddings, and enabling conversational Q&amp;A over the indexed content.</p>
             <div class="proj-tags">
-              <span class="tag">Voice AI</span>
-              <span class="tag">Telephony</span>
-              <span class="tag">STT / TTS</span>
-              <span class="tag">Automation</span>
-              <span class="tag">Customer Support</span>
+              <span class="tag">RAG</span>
+              <span class="tag">Vector Search</span>
+              <span class="tag">Pinecone</span>
+              <span class="tag">Deepgram</span>
+              <span class="tag">Streamlit</span>
             </div>
           </div>
           <div class="proj-hero-right fade-in">
             <div class="proj-stat-grid">
               <div class="proj-stat">
-                <span class="proj-stat-num">70%</span>
-                <span class="proj-stat-label">Calls handled autonomously</span>
+                <span class="proj-stat-num">End-to-end</span>
+                <span class="proj-stat-label">Automated pipeline</span>
               </div>
               <div class="proj-stat">
-                <span class="proj-stat-num">3×</span>
-                <span class="proj-stat-label">Faster resolution</span>
+                <span class="proj-stat-num">Semantic</span>
+                <span class="proj-stat-label">Search over transcripts</span>
               </div>
               <div class="proj-stat">
-                <span class="proj-stat-num">–45%</span>
-                <span class="proj-stat-label">Average handle time</span>
+                <span class="proj-stat-num">Natural</span>
+                <span class="proj-stat-label">Language Q&amp;A interface</span>
               </div>
               <div class="proj-stat">
-                <span class="proj-stat-num">24/7</span>
-                <span class="proj-stat-label">Always-on support</span>
+                <span class="proj-stat-num">Vector</span>
+                <span class="proj-stat-label">Embeddings in Pinecone</span>
               </div>
             </div>
           </div>
@@ -82,8 +82,8 @@
 
             <div class="proj-section fade-in">
               <h2 class="proj-section-title">Overview</h2>
-              <p class="proj-text">Phone support remains one of the highest-volume, highest-cost customer service channels. This project addresses that challenge head-on — building a voice-native AI assistant capable of understanding natural telephone speech, identifying the caller's intent, accessing live systems, and resolving the issue entirely without transferring to a human agent.</p>
-              <p class="proj-text">Unlike IVR systems that force callers through rigid menu trees, this assistant conducts a genuine conversation: it asks clarifying questions, confirms understanding, and provides specific, actionable answers tailored to the individual caller's account.</p>
+              <p class="proj-text">Podcast content is rich with insights, but fundamentally unsearchable — hours of audio locked away with no way to query specific topics or moments. This project tackles that problem by building a production-grade Retrieval-Augmented Generation (RAG) system that transforms podcast episodes into a conversational knowledge base.</p>
+              <p class="proj-text">The system handles the full pipeline autonomously: downloading episodes, transcribing audio with Deepgram, chunking and embedding the transcripts, storing vectors in Pinecone, and surfacing answers through a Streamlit interface — all without manual intervention at any stage.</p>
             </div>
 
             <div class="proj-section fade-in">
@@ -91,61 +91,61 @@
               <div class="problem-grid">
                 <div class="problem-card">
                   <div class="problem-icon" aria-hidden="true">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
                   </div>
-                  <h3>High call volumes</h3>
-                  <p>Routine enquiries (balance, status, appointments) consumed agent capacity that should go to complex issues.</p>
+                  <h3>Unsearchable audio</h3>
+                  <p>Valuable podcast knowledge is trapped in audio form — impossible to query, skim, or reference without listening in full.</p>
                 </div>
                 <div class="problem-card">
                   <div class="problem-icon" aria-hidden="true">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6M9 12h6M9 15h4"/></svg>
                   </div>
-                  <h3>Rigid IVR menus</h3>
-                  <p>Existing touch-tone systems frustrated customers and had low completion rates for anything non-trivial.</p>
+                  <h3>Keyword search limitations</h3>
+                  <p>Traditional keyword search fails to capture meaning — missing semantically related content and returning irrelevant exact-match results.</p>
                 </div>
                 <div class="problem-card">
                   <div class="problem-icon" aria-hidden="true">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
                   </div>
-                  <h3>Out-of-hours gap</h3>
-                  <p>No support available outside business hours left customers without help at critical moments.</p>
+                  <h3>Manual processing overhead</h3>
+                  <p>Manually transcribing, organising, and tagging episodes to build any kind of knowledge base is prohibitively time-consuming at scale.</p>
                 </div>
               </div>
             </div>
 
             <div class="proj-section fade-in">
               <h2 class="proj-section-title">Solution &amp; Architecture</h2>
-              <p class="proj-text">The system integrates a telephony layer (PSTN/VoIP), real-time speech recognition, a conversational AI engine, and back-end system connectors into a seamless pipeline. Calls arrive via standard phone lines — the assistant answers instantly, greets the caller by name (using ANI lookup), and enters a natural dialogue to understand and resolve their need.</p>
+              <p class="proj-text">The system implements a complete RAG pipeline: audio is downloaded and sent to Deepgram for transcription, the resulting text is chunked into overlapping segments and converted into dense vector embeddings, which are indexed in Pinecone. At query time, the user's question is embedded using the same model, the nearest vectors are retrieved from Pinecone, and a language model generates a grounded answer from those retrieved chunks.</p>
               <div class="arch-flow">
                 <div class="arch-step">
                   <span class="arch-step-num">1</span>
                   <div>
-                    <strong>Inbound Call</strong>
-                    <p>Caller dials in via PSTN/VoIP; ANI lookup retrieves account context</p>
+                    <strong>Audio Ingestion</strong>
+                    <p>Episodes downloaded automatically; audio sent to Deepgram for transcription</p>
                   </div>
                 </div>
                 <div class="arch-arrow" aria-hidden="true">→</div>
                 <div class="arch-step">
                   <span class="arch-step-num">2</span>
                   <div>
-                    <strong>Speech-to-Text</strong>
-                    <p>Real-time STT converts audio to text with low-latency streaming</p>
+                    <strong>Chunking &amp; Embedding</strong>
+                    <p>Transcripts split into overlapping chunks; each chunk converted to a vector embedding</p>
                   </div>
                 </div>
                 <div class="arch-arrow" aria-hidden="true">→</div>
                 <div class="arch-step">
                   <span class="arch-step-num">3</span>
                   <div>
-                    <strong>AI Dialogue</strong>
-                    <p>Conversational AI processes intent, queries systems, manages dialogue state</p>
+                    <strong>Vector Indexing</strong>
+                    <p>Embeddings stored in Pinecone with episode metadata for filtered retrieval</p>
                   </div>
                 </div>
                 <div class="arch-arrow" aria-hidden="true">→</div>
                 <div class="arch-step">
                   <span class="arch-step-num">4</span>
                   <div>
-                    <strong>TTS Response</strong>
-                    <p>Text-to-speech renders the reply naturally; escalates to agent if needed</p>
+                    <strong>Semantic Q&amp;A</strong>
+                    <p>Query embedded, nearest chunks retrieved, LLM generates grounded answer via Streamlit UI</p>
                   </div>
                 </div>
               </div>
@@ -157,40 +157,40 @@
                 <li class="feature-item">
                   <span class="feature-dot" aria-hidden="true"></span>
                   <div>
-                    <strong>Natural speech understanding</strong> — handles accents, filler words, and incomplete sentences without forcing callers to repeat structured phrases
+                    <strong>Automated episode management</strong> — downloads and processes new podcast episodes without manual intervention, keeping the knowledge base current
                   </div>
                 </li>
                 <li class="feature-item">
                   <span class="feature-dot" aria-hidden="true"></span>
                   <div>
-                    <strong>Caller authentication</strong> — voice biometrics and knowledge-based verification replace lengthy security questions
+                    <strong>Natural language queries</strong> — users ask questions in plain English; semantic search retrieves the most contextually relevant transcript segments
                   </div>
                 </li>
                 <li class="feature-item">
                   <span class="feature-dot" aria-hidden="true"></span>
                   <div>
-                    <strong>Live system access</strong> — reads and writes to CRM, billing, and ticketing systems in real time during the call
+                    <strong>Grounded, contextual answers</strong> — responses are generated directly from retrieved podcast content, reducing hallucination and anchoring answers in the source material
                   </div>
                 </li>
                 <li class="feature-item">
                   <span class="feature-dot" aria-hidden="true"></span>
                   <div>
-                    <strong>Warm transfer with context</strong> — when escalating, passes full call summary, intent, and data to the receiving agent
+                    <strong>Interactive Streamlit dashboard</strong> — displays indexed episodes, supports conversational follow-up questions, and shows source citations for transparency
                   </div>
                 </li>
                 <li class="feature-item">
                   <span class="feature-dot" aria-hidden="true"></span>
                   <div>
-                    <strong>Post-call analytics</strong> — automatic call transcription, intent tagging, and CSAT prediction for every interaction
+                    <strong>Scalable vector store</strong> — Pinecone handles similarity search at scale with low-latency retrieval, supporting growing episode libraries without re-architecture
                   </div>
                 </li>
               </ul>
             </div>
 
             <div class="proj-section fade-in">
-              <h2 class="proj-section-title">Impact &amp; Outcomes</h2>
-              <p class="proj-text">Autonomous resolution rates reached 70% for targeted call types within 60 days of go-live, dramatically reducing the volume of calls requiring human agents. Average handle time dropped by 45% even for escalated calls, as agents received pre-populated context rather than starting from scratch.</p>
-              <p class="proj-text">The product-led approach to iteration — listening to call recordings, reviewing failed intent classifications, and running weekly improvement sprints — was key to reaching and sustaining these numbers. The voice assistant became a core part of the support strategy, running 24/7 with near-zero incremental cost per call at scale.</p>
+              <h2 class="proj-section-title">Learning &amp; Outcomes</h2>
+              <p class="proj-text">Building this system end-to-end surfaced the real tradeoffs in production RAG: chunk size and overlap strategy significantly affect retrieval quality, embedding model selection involves cost-vs-accuracy tradeoffs, and prompt engineering for grounded generation requires careful iteration to prevent the model from reaching beyond retrieved context.</p>
+              <p class="proj-text">The project was completed as part of the Curious PM March 2026 cohort, demonstrating hands-on AI product building — from architecture decisions and infrastructure setup to user interface design and iterative quality improvement. The result is a working system that turns passive podcast listening into an active, queryable knowledge base.</p>
             </div>
 
           </div>
@@ -200,23 +200,32 @@
             <div class="sidebar-card">
               <h3 class="sidebar-title">Tech Stack</h3>
               <ul class="sidebar-tags">
-                <li class="skill-tag accent-tag">Speech-to-Text (STT)</li>
-                <li class="skill-tag accent-tag">Text-to-Speech (TTS)</li>
-                <li class="skill-tag accent-tag">Conversational AI</li>
-                <li class="skill-tag">Telephony / VoIP</li>
-                <li class="skill-tag">CRM Integration</li>
-                <li class="skill-tag">Voice Biometrics</li>
+                <li class="skill-tag accent-tag">RAG Architecture</li>
+                <li class="skill-tag accent-tag">Pinecone</li>
+                <li class="skill-tag accent-tag">Deepgram API</li>
+                <li class="skill-tag accent-tag">Vector Embeddings</li>
+                <li class="skill-tag">Streamlit</li>
+                <li class="skill-tag">Prompt Engineering</li>
               </ul>
             </div>
             <div class="sidebar-card">
               <h3 class="sidebar-title">My Role</h3>
-              <p class="sidebar-text">Product Owner — led problem discovery via call data analysis and agent interviews, defined dialogue flows, owned backlog prioritisation, and measured post-launch performance against deflection and CSAT targets.</p>
+              <p class="sidebar-text">Builder — designed the end-to-end RAG pipeline, selected and integrated third-party APIs (Deepgram, Pinecone), tuned chunking and embedding strategies, and built the Streamlit interface for conversational access to indexed content.</p>
+            </div>
+            <div class="sidebar-card">
+              <h3 class="sidebar-title">Context</h3>
+              <p class="sidebar-text">Built as part of the Curious PM March 2026 cohort — a hands-on programme focused on building AI products rather than theoretical knowledge.</p>
             </div>
             <div class="sidebar-card">
               <h3 class="sidebar-title">Other Projects</h3>
               <a href="project-1.html" class="sidebar-proj-link">
                 <span class="sidebar-proj-num">01</span>
                 <span>AI Chatbot with Database Integration</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+              <a href="project-2.html" class="sidebar-proj-link">
+                <span class="sidebar-proj-num">02</span>
+                <span>AI Voice Assistant with Phone Support</span>
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
               </a>
               <a href="project-3.html" class="sidebar-proj-link">
@@ -227,11 +236,6 @@
               <a href="project-4.html" class="sidebar-proj-link">
                 <span class="sidebar-proj-num">04</span>
                 <span>StoryGlobe — 3D Gateway to Global Folklore</span>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-              </a>
-              <a href="project-5.html" class="sidebar-proj-link">
-                <span class="sidebar-proj-num">05</span>
-                <span>Podcast RAG System with Vector Search</span>
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
               </a>
             </div>
