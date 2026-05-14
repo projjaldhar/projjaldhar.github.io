@@ -95,6 +95,9 @@ img { max-width: 100%; display: block; }
   max-width: var(--max);
   margin: 0 auto;
   position: relative;
+  /* Ensure content starts visible above fold */
+  align-items: flex-start;
+  padding-top: 130px;
 }
 .hero-grid {
   display: grid;
@@ -351,10 +354,13 @@ img { max-width: 100%; display: block; }
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  padding: 10px 20px;
+  padding: 10px 20px 12px;
   cursor: pointer;
   margin-bottom: -1px;
   transition: color var(--t), border-color var(--t);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 .tab-btn:hover { color: var(--text); }
 .tab-btn.active {
@@ -608,6 +614,94 @@ a.project-card:nth-child(2) .work-outcome-text,
   margin-top: 7px;
 }
 
+/* ============================================================
+   AT THE MOMENT
+   ============================================================ */
+.atm-section {
+  border-top: 1px solid var(--border);
+  padding: 64px 0;
+}
+.atm-inner { max-width: 840px; }
+.atm-label {
+  display: block;
+  font-size: 0.72rem;
+  color: var(--text-3);
+  letter-spacing: 0.14em;
+  font-weight: 700;
+  margin-bottom: 20px;
+  font-family: var(--font);
+}
+.atm-text {
+  font-size: clamp(1.05rem, 2.4vw, 1.5rem);
+  color: var(--text-2);
+  line-height: 1.55;
+  margin-bottom: 24px;
+}
+.atm-text strong { color: var(--text); font-weight: 700; }
+.atm-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+
+/* ============================================================
+   TOOLS GRID
+   ============================================================ */
+.tools-section {
+  margin-top: 40px;
+  padding-top: 32px;
+  border-top: 1px solid var(--border);
+  margin-bottom: 40px;
+}
+.tools-section-title {
+  font-size: 0.65rem;
+  color: var(--text-3);
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.tools-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.tool-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid var(--border-l);
+  padding: 7px 14px;
+  font-size: 0.78rem;
+  color: var(--text-2);
+  font-family: var(--font);
+  transition: border-color var(--t), color var(--t);
+  cursor: default;
+}
+.tool-chip:hover { border-color: var(--border); color: var(--text); }
+.tool-chip svg { flex-shrink: 0; opacity: 0.6; transition: opacity var(--t); }
+.tool-chip:hover svg { opacity: 1; }
+.tool-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 20px;
+  height: 18px;
+  background: var(--text);
+  color: var(--bg);
+  font-size: 0.52rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  padding: 0 3px;
+  flex-shrink: 0;
+}
+
+/* Tab subtitle */
+.tab-sub {
+  display: block;
+  font-size: 0.58rem;
+  letter-spacing: 0.06em;
+  font-weight: 400;
+  opacity: 0.55;
+  text-transform: none;
+  margin-top: 2px;
+}
 /* ============================================================
    EXPERIENCE — TIMELINE
    ============================================================ */
