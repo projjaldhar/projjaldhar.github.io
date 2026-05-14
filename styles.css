@@ -119,11 +119,10 @@ img { max-width: 100%; display: block; }
 }
 .hero-grid {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 60px;
-  align-items: start;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
   width: 100%;
-  max-width: 680px;
   position: relative;
   z-index: 1;
 }
@@ -211,6 +210,55 @@ img { max-width: 100%; display: block; }
 }
 
 .hero-scroll { display: none; }
+
+/* Hero quote panel */
+.hero-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-quote-wrap {
+  position: relative;
+  max-width: 420px;
+}
+.hero-quote-mark {
+  display: block;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 7rem;
+  line-height: 0.6;
+  color: var(--accent-bright);
+  opacity: 0.18;
+  margin-bottom: 16px;
+  user-select: none;
+}
+.hero-quote-text {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--text);
+  line-height: 1.65;
+  letter-spacing: -0.02em;
+  font-style: italic;
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.hero-quote-text.fade-out {
+  opacity: 0;
+  transform: translateY(8px);
+}
+.hero-quote-author {
+  display: block;
+  font-size: 0.72rem;
+  color: var(--text-3);
+  font-style: normal;
+  margin-top: 20px;
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+.hero-quote-author.fade-out { opacity: 0; }
 
 
 /* ============================================================
@@ -1037,6 +1085,8 @@ a.project-card:hover .project-cta { gap: 10px; }
    RESPONSIVE
    ============================================================ */
 @media (max-width: 1024px) {
+  .hero-grid { grid-template-columns: 1fr; gap: 40px; }
+  .hero-right { display: none; }
   .about-grid { grid-template-columns: 1fr; gap: 40px; }
   .projects-grid { padding-bottom: 0; }
   .projects-grid > :nth-child(even) { transform: none; }

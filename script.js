@@ -107,6 +107,44 @@ if (window.location.hash === '#projects') {
   activateTab('dev');
 }
 
+/* ============================================================
+   HERO QUOTE — cycle through quotes with fade transition
+   ============================================================ */
+const quotes = [
+  { text: "Fall in love with the problem, not the solution.", author: "Uri Levine" },
+  { text: "The best products don't win. The best understood problems do.", author: "Marty Cagan" },
+  { text: "If you are not embarrassed by the first version of your product, you've launched too late.", author: "Reid Hoffman" },
+  { text: "Good product managers don't ask 'what should we build?' They ask 'what problem are we solving?'", author: "Teresa Torres" },
+  { text: "Talk to users. Build what they want. Grow.", author: "Paul Graham" },
+];
+
+const quoteEl   = document.getElementById('heroQuote');
+const authorEl  = document.getElementById('heroQuoteAuthor');
+
+if (quoteEl && authorEl) {
+  let current = 0;
+
+  function setQuote(idx) {
+    quoteEl.textContent  = quotes[idx].text;
+    authorEl.textContent = '— ' + quotes[idx].author;
+  }
+
+  function cycleQuote() {
+    quoteEl.classList.add('fade-out');
+    authorEl.classList.add('fade-out');
+
+    setTimeout(() => {
+      current = (current + 1) % quotes.length;
+      setQuote(current);
+      quoteEl.classList.remove('fade-out');
+      authorEl.classList.remove('fade-out');
+    }, 500);
+  }
+
+  setQuote(0);
+  setInterval(cycleQuote, 5000);
+}
+
 // Handle nav </DEV> link click
 document.querySelectorAll('a[href="#projects"]').forEach(link => {
   link.addEventListener('click', () => {
