@@ -193,6 +193,36 @@
               <p class="proj-text">The product-led approach to iteration — listening to call recordings, reviewing failed intent classifications, and running weekly improvement sprints — was key to reaching and sustaining these numbers. The voice assistant became a core part of the support strategy, running 24/7 with near-zero incremental cost per call at scale.</p>
             </div>
 
+            <div class="proj-section fade-in">
+              <h2 class="proj-section-title">Lessons Learned</h2>
+              <ul class="feature-list">
+                <li class="feature-item">
+                  <span class="feature-dot" aria-hidden="true"></span>
+                  <div>
+                    <strong>Latency tolerance in voice is far lower than in text</strong> — users forgive a slow chatbot; they hang up on a slow voice assistant. Even a 2-second STT processing delay felt broken. Optimising for perceived latency — including filler audio and progressive responses — should have been prioritised earlier.
+                  </div>
+                </li>
+                <li class="feature-item">
+                  <span class="feature-dot" aria-hidden="true"></span>
+                  <div>
+                    <strong>Scripted tests missed what real callers exposed immediately</strong> — diverse accents, background noise, and natural speech patterns surfaced failures that lab testing never caught. Real call recording review from week one was the most valuable QA tool.
+                  </div>
+                </li>
+                <li class="feature-item">
+                  <span class="feature-dot" aria-hidden="true"></span>
+                  <div>
+                    <strong>A poor escalation handoff is worse than no automation at all</strong> — early versions transferred calls without enough context, leaving agents starting from scratch and frustrating callers twice. Investing in the handoff summary before scaling was the right call.
+                  </div>
+                </li>
+                <li class="feature-item">
+                  <span class="feature-dot" aria-hidden="true"></span>
+                  <div>
+                    <strong>"Autonomous resolution" needs a precise, agreed definition</strong> — partial resolutions were initially counted as successful, inflating the metric. Establishing a shared definition with stakeholders before launch would have prevented that misalignment.
+                  </div>
+                </li>
+              </ul>
+            </div>
+
           </div>
 
           <!-- Sidebar -->

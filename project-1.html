@@ -193,6 +193,36 @@
               <p class="proj-text">The product management approach focused on iterative feedback loops — analysing misclassified intents weekly and retraining models, which drove continuous improvement in accuracy over the first three months post-launch.</p>
             </div>
 
+            <div class="proj-section fade-in">
+              <h2 class="proj-section-title">Lessons Learned</h2>
+              <ul class="feature-list">
+                <li class="feature-item">
+                  <span class="feature-dot" aria-hidden="true"></span>
+                  <div>
+                    <strong>Intent classification is an ongoing product, not a one-time build</strong> — edge cases accumulate faster than expected in production. Shipping a weekly intent review process from day one would have reduced the lag between failure and fix significantly.
+                  </div>
+                </li>
+                <li class="feature-item">
+                  <span class="feature-dot" aria-hidden="true"></span>
+                  <div>
+                    <strong>Caching strategy needs to be designed upfront</strong> — real-time database queries at conversational latency require aggressive caching. Bolting this on after launch was costly; it should have been a first-class architecture decision.
+                  </div>
+                </li>
+                <li class="feature-item">
+                  <span class="feature-dot" aria-hidden="true"></span>
+                  <div>
+                    <strong>The fallback experience matters as much as the happy path</strong> — users who hit the escalation path had significantly lower satisfaction scores until context handoff was improved. Designing the fallback with the same care as the primary flow is non-negotiable.
+                  </div>
+                </li>
+                <li class="feature-item">
+                  <span class="feature-dot" aria-hidden="true"></span>
+                  <div>
+                    <strong>Monthly improvement reviews aren't frequent enough</strong> — switching from monthly to weekly model improvement cycles was the single change that most accelerated accuracy gains in the first quarter.
+                  </div>
+                </li>
+              </ul>
+            </div>
+
           </div>
 
           <!-- Sidebar -->

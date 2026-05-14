@@ -193,6 +193,36 @@
               <p class="proj-text">The project was completed as part of the Curious PM March 2026 cohort, demonstrating hands-on AI product building — from architecture decisions and infrastructure setup to user interface design and iterative quality improvement. The result is a working system that turns passive podcast listening into an active, queryable knowledge base.</p>
             </div>
 
+            <div class="proj-section fade-in">
+              <h2 class="proj-section-title">Lessons Learned</h2>
+              <ul class="feature-list">
+                <li class="feature-item">
+                  <span class="feature-dot" aria-hidden="true"></span>
+                  <div>
+                    <strong>Chunk size and overlap strategy has outsized impact on answer quality</strong> — smaller chunks improved retrieval precision but stripped the surrounding context that the LLM needed to generate coherent answers. Finding the right balance required more experimentation than expected and should be treated as a tunable parameter from the start.
+                  </div>
+                </li>
+                <li class="feature-item">
+                  <span class="feature-dot" aria-hidden="true"></span>
+                  <div>
+                    <strong>Transcription quality is a hidden upstream dependency</strong> — Deepgram performed well generally, but technical terminology and proper nouns were occasionally transcribed incorrectly, degrading downstream retrieval. A transcript cleaning step before embedding would have improved results without significant effort.
+                  </div>
+                </li>
+                <li class="feature-item">
+                  <span class="feature-dot" aria-hidden="true"></span>
+                  <div>
+                    <strong>RAG prompt engineering is its own discipline</strong> — standard prompting techniques didn't prevent the model from occasionally reaching beyond the retrieved context. Explicit, tested instructions anchoring the model strictly to provided chunks were necessary to make answers trustworthy.
+                  </div>
+                </li>
+                <li class="feature-item">
+                  <span class="feature-dot" aria-hidden="true"></span>
+                  <div>
+                    <strong>Embedding costs are easy to underestimate at scale</strong> — embedding every word of every episode without a smart chunking and batching strategy was expensive. Designing for cost-efficiency from the start — batching requests and avoiding redundant re-embedding — is worth the upfront planning.
+                  </div>
+                </li>
+              </ul>
+            </div>
+
           </div>
 
           <!-- Sidebar -->

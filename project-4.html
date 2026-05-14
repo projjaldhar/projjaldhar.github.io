@@ -198,6 +198,36 @@
               <p class="proj-text">The product decision to remove login entirely — relying on localStorage for progress — proved critical. Drop-off at the entry point was minimal, validating the hypothesis that curiosity-driven products live or die by how quickly users can reach their first moment of value. The Passport system provided the retention hook without the cost of an auth flow.</p>
             </div>
 
+            <div class="proj-section fade-in">
+              <h2 class="proj-section-title">Lessons Learned</h2>
+              <ul class="feature-list">
+                <li class="feature-item">
+                  <span class="feature-dot" aria-hidden="true"></span>
+                  <div>
+                    <strong>WebGL performance on lower-end mobile is a first-class constraint</strong> — the globe ran smoothly on modern devices but stuttered on older phones until texture resolution was reduced and geometry complexity was managed. Mobile performance testing should start on day one, not before launch.
+                  </div>
+                </li>
+                <li class="feature-item">
+                  <span class="feature-dot" aria-hidden="true"></span>
+                  <div>
+                    <strong>The no-login decision validated quickly but surfaced a new problem</strong> — localStorage progress can't sync across devices. Power users who switched from phone to desktop lost their Passport progress. A lightweight, optional account sync would be the first thing I'd add in a next iteration.
+                  </div>
+                </li>
+                <li class="feature-item">
+                  <span class="feature-dot" aria-hidden="true"></span>
+                  <div>
+                    <strong>Cultural content requires more schema design than expected</strong> — attribution, moral, cultural context, and tone all needed their own structured fields. A flat content model would have made filtering and future personalisation much harder.
+                  </div>
+                </li>
+                <li class="feature-item">
+                  <span class="feature-dot" aria-hidden="true"></span>
+                  <div>
+                    <strong>Gamification is worth the scope</strong> — the Passport badge system took longer to build than estimated but became the most mentioned feature in user feedback. Retention hooks designed for curiosity-driven products need to reward exploration, not just completion.
+                  </div>
+                </li>
+              </ul>
+            </div>
+
           </div>
 
           <!-- Sidebar -->

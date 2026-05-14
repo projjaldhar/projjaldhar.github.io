@@ -193,6 +193,36 @@
               <p class="proj-text">From a product perspective, the most valuable insight was that the preference learning loop was the key differentiator. Users who provided feedback within the first week saw dramatically better results within 14 days, highlighting the importance of designing feedback mechanisms that are frictionless and immediately rewarding.</p>
             </div>
 
+            <div class="proj-section fade-in">
+              <h2 class="proj-section-title">Lessons Learned</h2>
+              <ul class="feature-list">
+                <li class="feature-item">
+                  <span class="feature-dot" aria-hidden="true"></span>
+                  <div>
+                    <strong>Autonomous agents need explicit guardrails from the start</strong> — the agent occasionally applied to technically relevant but clearly wrong roles (wrong seniority level, wrong geography) until scoring thresholds were tightened. Guardrails are not a refinement; they are a core design requirement.
+                  </div>
+                </li>
+                <li class="feature-item">
+                  <span class="feature-dot" aria-hidden="true"></span>
+                  <div>
+                    <strong>The feedback loop is the real product</strong> — users who didn't engage with the preference feedback saw diminishing results quickly. Reducing feedback friction was more impactful than any improvement to the core scoring model.
+                  </div>
+                </li>
+                <li class="feature-item">
+                  <span class="feature-dot" aria-hidden="true"></span>
+                  <div>
+                    <strong>Cover letter quality requires structured context injection</strong> — generic prompt templates produced generic letters. Injecting structured role data (company name, key requirements, culture signals) before generation made quality consistent enough to trust at scale.
+                  </div>
+                </li>
+                <li class="feature-item">
+                  <span class="feature-dot" aria-hidden="true"></span>
+                  <div>
+                    <strong>Multi-platform scraping is a maintenance burden, not a one-off task</strong> — job board HTML structures change regularly. Building a scraper monitoring layer to detect and flag breakage early would have saved significant reactive debugging time.
+                  </div>
+                </li>
+              </ul>
+            </div>
+
           </div>
 
           <!-- Sidebar -->
