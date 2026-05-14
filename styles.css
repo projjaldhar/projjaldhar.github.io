@@ -108,8 +108,11 @@ img { max-width: 100%; display: block; }
   position: relative;
 }
 .hero-grid {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 60px;
+  align-items: start;
   width: 100%;
-  max-width: 680px;
 }
 
 /* Left */
@@ -254,6 +257,95 @@ img { max-width: 100%; display: block; }
 @keyframes pulse-dot { 0%,100%{opacity:1} 50%{opacity:0.4} }
 .badge-dot { animation: pulse-dot 2.5s infinite; }
 .hero-scroll { display: none; }
+
+/* Hero right panel */
+.hero-right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* In Short card */
+.in-short-card {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  background: var(--bg);
+}
+.in-short-label {
+  display: block;
+  font-size: 0.7rem;
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--text-3);
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+.in-short-text {
+  font-size: 0.95rem;
+  color: var(--text-2);
+  line-height: 1.75;
+}
+
+/* Tools I rely on */
+.hero-tools {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  background: var(--bg);
+}
+.hero-tools-label {
+  display: block;
+  font-size: 0.7rem;
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--text-3);
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.hero-tools-sub {
+  font-size: 0.82rem;
+  color: var(--text-3);
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+.hero-tools-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+.hero-tool-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+.tool-logo-wrap {
+  width: 48px;
+  height: 48px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg);
+  transition: border-color var(--t), box-shadow var(--t);
+  overflow: hidden;
+}
+.tool-logo-wrap:hover {
+  border-color: var(--border-med);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+.tool-logo-wrap img { width: 28px; height: 28px; object-fit: contain; }
+.hero-tool-item span {
+  font-size: 0.62rem;
+  color: var(--text-3);
+  font-family: var(--font-mono);
+  text-align: center;
+  line-height: 1.2;
+}
 
 /* ============================================================
    LAYOUT HELPERS
@@ -981,6 +1073,7 @@ a.project-card:hover .project-cta { gap: 10px; }
    RESPONSIVE
    ============================================================ */
 @media (max-width: 1024px) {
+  .hero-grid { grid-template-columns: 1fr; gap: 40px; }
   .about-grid { grid-template-columns: 1fr; gap: 40px; }
   .projects-grid { padding-bottom: 0; }
   .projects-grid > :nth-child(even) { transform: none; }
