@@ -199,19 +199,15 @@ img { max-width: 100%; display: block; }
 .hero-stats {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 0;
-  border: 1px solid var(--border);
+  gap: 10px;
 }
 .stat-card {
-  border-right: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
+  border: 1px solid var(--border);
   padding: 20px 18px;
   display: flex;
   flex-direction: column;
   gap: 6px;
 }
-.stat-card:nth-child(even) { border-right: none; }
-.stat-card:nth-last-child(-n+2) { border-bottom: none; }
 .stat-number {
   font-size: 2rem;
   font-weight: 700;
@@ -267,19 +263,26 @@ img { max-width: 100%; display: block; }
 }
 .section-label {
   display: inline-block;
-  font-size: 0.7rem;
+  font-size: 0.68rem;
   color: var(--text-3);
-  letter-spacing: 0.2em;
+  letter-spacing: 0.22em;
   text-transform: uppercase;
   font-weight: 700;
 }
 .section-title {
-  font-size: clamp(1.4rem, 2.8vw, 2.2rem);
+  font-size: clamp(1.3rem, 2.6vw, 2rem);
   font-weight: 700;
-  letter-spacing: -0.01em;
+  letter-spacing: 0.02em;
   line-height: 1.1;
   color: var(--text);
   text-transform: uppercase;
+}
+/* In about-left the title is stacked below the label */
+.about-left .section-label { margin-bottom: 12px; }
+.about-left .section-title {
+  font-size: clamp(1.1rem, 2vw, 1.5rem);
+  letter-spacing: 0.03em;
+  line-height: 1.3;
 }
 .accent { color: var(--text); }
 
@@ -397,14 +400,18 @@ a.project-card:nth-child(2),
 a.project-card:nth-child(2):hover { background: #111; }
 
 .project-number {
-  font-size: 0.7rem;
+  font-size: 0.68rem;
   color: var(--text-3);
-  letter-spacing: 0.12em;
+  letter-spacing: 0.1em;
   font-weight: 700;
-  margin-bottom: 14px;
 }
 .project-number::before { content: '['; }
 .project-number::after  { content: ']'; }
+/* When number is standalone (DEV cards), add bottom margin */
+.projects-grid > .project-card > .project-number,
+.projects-grid > a.project-card > .project-number {
+  margin-bottom: 14px;
+}
 
 /* 2nd card number in inverted */
 a.project-card:nth-child(2) .project-number,
@@ -529,15 +536,13 @@ a.project-card:nth-child(2) .work-outcome-text,
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 0;
-  border: 1px solid var(--border);
+  gap: 16px;
   margin-bottom: 48px;
 }
 .skill-group {
+  border: 1px solid var(--border);
   padding: 28px;
-  border-right: 1px solid var(--border);
 }
-.skill-group:last-child { border-right: none; }
 .skill-group-title {
   font-size: 0.65rem;
   color: var(--text-3);
@@ -772,17 +777,15 @@ a.project-card:nth-child(2) .work-outcome-text,
 .writing-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 0;
-  border: 1px solid var(--border);
+  gap: 16px;
 }
 .writing-card {
-  border-right: 1px solid var(--border);
+  border: 1px solid var(--border);
   padding: 28px;
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
-.writing-card:last-child { border-right: none; }
 .writing-meta { display: flex; align-items: center; }
 .writing-read {
   font-size: 0.65rem;
@@ -910,10 +913,6 @@ a.project-card:nth-child(2) .work-outcome-text,
   .writing-grid { grid-template-columns: 1fr; }
   .about-meta { grid-template-columns: 1fr; }
   .contact-link { min-width: unset; width: 100%; max-width: 380px; }
-  .skill-group { border-right: none; border-bottom: 1px solid var(--border); }
-  .skill-group:last-child { border-bottom: none; }
-  .writing-card { border-right: none; border-bottom: 1px solid var(--border); }
-  .writing-card:last-child { border-bottom: none; }
 }
 
 @media (max-width: 480px) {
