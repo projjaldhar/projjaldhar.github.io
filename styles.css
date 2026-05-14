@@ -735,6 +735,62 @@ a.project-card:hover .project-cta {
 }
 
 /* ============================================================
+   WORK PROJECT CARDS
+   ============================================================ */
+.work-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.work-company-badge {
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: var(--accent);
+  background: var(--accent-dim);
+  border: 1px solid rgba(129, 140, 248, 0.25);
+  padding: 3px 10px;
+  border-radius: 100px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.work-outcome {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  background: rgba(255,255,255,0.02);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+.work-outcome-stat {
+  font-size: 0.975rem;
+  font-weight: 800;
+  color: var(--accent);
+  letter-spacing: -0.02em;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.work-outcome-divider {
+  width: 1px;
+  height: 16px;
+  background: var(--border-l);
+  flex-shrink: 0;
+}
+.work-outcome-text {
+  font-size: 0.78rem;
+  color: var(--text-2);
+  line-height: 1.4;
+}
+
+/* Code-style label for </DEV> section */
+.code-label {
+  font-family: 'SF Mono', 'Fira Code', 'Fira Mono', 'Courier New', monospace !important;
+  letter-spacing: 0.05em !important;
+  text-transform: none !important;
+  font-size: 0.88rem !important;
+}
+
+/* ============================================================
    WRITING
    ============================================================ */
 .writing-grid {
