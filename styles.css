@@ -735,6 +735,91 @@ a.project-card:hover .project-cta {
 }
 
 /* ============================================================
+   WRITING
+   ============================================================ */
+.writing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  margin-bottom: 48px;
+}
+.writing-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  transition: border-color var(--t) var(--ease),
+              background var(--t) var(--ease),
+              transform 0.3s var(--ease);
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+.writing-card::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--accent), var(--accent-b), transparent);
+  opacity: 0;
+  transition: opacity var(--t) var(--ease);
+}
+.writing-card:hover {
+  border-color: rgba(129, 140, 248, 0.35);
+  background: var(--bg-card-h);
+  transform: translateY(-5px);
+}
+.writing-card:hover::after { opacity: 1; }
+.writing-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.writing-read {
+  font-size: 0.68rem;
+  color: var(--accent);
+  letter-spacing: 0.18em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.writing-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text);
+  line-height: 1.45;
+}
+.writing-excerpt {
+  font-size: 0.86rem;
+  color: var(--text-2);
+  line-height: 1.75;
+  flex: 1;
+}
+.writing-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--text-3);
+  margin-top: 6px;
+  letter-spacing: 0.03em;
+  transition: color var(--t) var(--ease), gap var(--t) var(--ease);
+}
+.writing-card:hover .writing-cta {
+  color: var(--accent);
+  gap: 10px;
+}
+.writing-footer {
+  display: flex;
+  justify-content: center;
+}
+
+/* ============================================================
    CONTACT
    ============================================================ */
 .contact-wrapper {
@@ -838,6 +923,7 @@ a.project-card:hover .project-cta {
   .about-grid { grid-template-columns: 1fr; gap: 40px; }
   .projects-grid { grid-template-columns: 1fr 1fr; }
   .skills-grid { grid-template-columns: 1fr 1fr; }
+  .writing-grid { grid-template-columns: 1fr 1fr; }
 }
 
 @media (max-width: 768px) {
@@ -849,6 +935,7 @@ a.project-card:hover .project-cta {
   .hero-scroll { display: none; }
   .projects-grid { grid-template-columns: 1fr; }
   .skills-grid { grid-template-columns: 1fr; }
+  .writing-grid { grid-template-columns: 1fr; }
   .about-meta { grid-template-columns: 1fr; }
   .contact-link { min-width: unset; width: 100%; max-width: 360px; }
 }
