@@ -80,3 +80,36 @@ const statObserver = new IntersectionObserver((entries) => {
 }, { threshold: 0.4 });
 
 statCards.forEach(card => statObserver.observe(card));
+
+/* ============================================================
+   TAB SWITCHER — Work / DEV projects
+   ============================================================ */
+const tabBtns = document.querySelectorAll('.tab-btn');
+const tabPanels = document.querySelectorAll('.tab-panel');
+
+function activateTab(tabId) {
+  tabBtns.forEach(btn => {
+    const isActive = btn.dataset.tab === tabId;
+    btn.classList.toggle('active', isActive);
+    btn.setAttribute('aria-selected', isActive);
+  });
+  tabPanels.forEach(panel => {
+    panel.classList.toggle('hidden', panel.id !== 'tab-' + tabId);
+  });
+}
+
+tabBtns.forEach(btn => {
+  btn.addEventListener('click', () => activateTab(btn.dataset.tab));
+});
+
+// Activate DEV tab when navigating to #projects
+if (window.location.hash === '#projects') {
+  activateTab('dev');
+}
+
+// Handle nav </DEV> link click
+document.querySelectorAll('a[href="#projects"]').forEach(link => {
+  link.addEventListener('click', () => {
+    activateTab('dev');
+  });
+});

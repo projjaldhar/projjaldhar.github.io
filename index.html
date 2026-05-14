@@ -38,10 +38,10 @@
           Verizon Connect
         </p>
         <p class="hero-tagline fade-in">
-          10+ years building AI-powered products at the intersection of technology and human need — from fleet intelligence to autonomous agents.
+          I've built from the code up — OMS implementations, fleet intelligence, AI agents. 10+ years of doing the work, now leading the product.
         </p>
         <div class="hero-actions fade-in">
-          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#work" class="btn btn-primary">View Projects</a>
           <a href="mailto:projjal.dhar@gmail.com" class="btn btn-secondary">Get in Touch</a>
           <a href="Projjal_Dhar_Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right:6px" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
@@ -75,10 +75,6 @@
           <div class="stat-card" role="listitem">
             <span class="stat-number">5</span>
             <span class="stat-label">AI Projects</span>
-          </div>
-          <div class="stat-card stat-highlight" role="listitem">
-            <span class="stat-number">90%</span>
-            <span class="stat-label">AI Model Accuracy</span>
           </div>
         </div>
         <div class="hero-badge" role="status">
@@ -126,13 +122,18 @@
     </div>
   </section>
 
-  <!-- Work Projects Section -->
-  <section class="section" id="work" aria-label="Professional work projects">
+  <!-- Projects Section (tabbed: Work + DEV) -->
+  <section class="section" id="work" aria-label="Projects">
     <div class="container">
       <div class="section-header fade-in">
-        <span class="section-label">Product Work</span>
-        <h2 class="section-title">Professional Projects</h2>
+        <span class="section-label">Projects</span>
+        <h2 class="section-title">What I've Built</h2>
       </div>
+      <div class="tab-nav fade-in" role="tablist" aria-label="Project categories">
+        <button class="tab-btn active" data-tab="work" role="tab" aria-selected="true" aria-controls="tab-work">Product Work</button>
+        <button class="tab-btn" data-tab="dev" role="tab" aria-selected="false" aria-controls="tab-dev">&lt;/DEV&gt;</button>
+      </div>
+      <div id="tab-work" class="tab-panel" role="tabpanel">
       <div class="projects-grid">
 
         <a href="work-1.html" class="project-card fade-in" aria-label="View AI/ML Driver Mapping project details">
@@ -336,16 +337,9 @@
         </a>
 
       </div>
-    </div>
-  </section>
-
-  <!-- AI & Side Projects Section -->
-  <section class="section section-alt" id="projects" aria-label="AI and side projects">
-    <div class="container">
-      <div class="section-header fade-in">
-        <span class="section-label code-label">&lt;/DEV&gt;</span>
-        <h2 class="section-title">AI &amp; Side Projects</h2>
-      </div>
+      </div><!-- end tab-work -->
+      <span id="projects" style="position:absolute;visibility:hidden" aria-hidden="true"></span>
+      <div id="tab-dev" class="tab-panel hidden" role="tabpanel">
       <div class="projects-grid">
 
         <a href="project-1.html" class="project-card fade-in" aria-label="View AI Chatbot project details">
@@ -455,6 +449,7 @@
         </a>
 
       </div>
+      </div><!-- end tab-dev -->
     </div>
   </section>
 
@@ -545,7 +540,10 @@
           <div class="tl-card">
             <div class="tl-header">
               <div class="tl-meta">
-                <span class="tl-company">Verizon Connect</span>
+                <div class="tl-company-row">
+                  <span class="tl-logo tl-logo--verizon">VZ</span>
+                  <span class="tl-company">Verizon Connect</span>
+                </div>
                 <span class="tl-period">2022 — Present</span>
               </div>
               <span class="tl-badge">Current</span>
@@ -568,7 +566,10 @@
           <div class="tl-card">
             <div class="tl-header">
               <div class="tl-meta">
-                <span class="tl-company">Retail inMotion</span>
+                <div class="tl-company-row">
+                  <span class="tl-logo tl-logo--rim">RiM</span>
+                  <span class="tl-company">Retail inMotion</span>
+                </div>
                 <span class="tl-period">2019 — 2022</span>
               </div>
             </div>
@@ -588,53 +589,25 @@
           <div class="tl-card">
             <div class="tl-header">
               <div class="tl-meta">
-                <span class="tl-company">Accenture</span>
-                <span class="tl-period">2017 — 2018</span>
+                <div class="tl-company-row">
+                  <span class="tl-logo tl-logo--ibm">IBM</span>
+                  <span class="tl-company">IBM Sterling Commerce — OMS / WMS</span>
+                </div>
+                <span class="tl-period">2009 — 2018</span>
               </div>
             </div>
-            <div class="tl-role">Application Development Team Lead</div>
-            <div class="tl-location">Dublin, Ireland</div>
-            <ul class="tl-highlights">
-              <li>Led a cross-functional development team delivering enterprise application solutions for a major financial services client</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="tl-marker">
-            <div class="tl-dot"></div>
-          </div>
-          <div class="tl-card">
-            <div class="tl-header">
-              <div class="tl-meta">
-                <span class="tl-company">IBM</span>
-                <span class="tl-period">2015 — 2017</span>
-              </div>
+            <div class="tl-role">Systems Engineer → Team Lead → Package Solution Consultant → Application Dev Lead</div>
+            <div class="tl-location">India · Dublin, Ireland</div>
+            <div class="tl-company-breakdown">
+              <span>Infosys <em>2009–11</em></span>
+              <span>Cognizant <em>2011–15</em></span>
+              <span>IBM <em>2015–17</em></span>
+              <span>Accenture <em>2017–18</em></span>
             </div>
-            <div class="tl-role">Package Solution Consultant — Sterling OMS / WMS</div>
-            <div class="tl-location">India</div>
             <ul class="tl-highlights">
-              <li>Implemented Sterling Order Management and Warehouse Management System solutions for enterprise retail clients</li>
-              <li>Earned <strong>IBM Certified Solution Designer — Sterling OMS V9.2</strong> certification during this tenure</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="tl-marker">
-            <div class="tl-dot"></div>
-          </div>
-          <div class="tl-card">
-            <div class="tl-header">
-              <div class="tl-meta">
-                <span class="tl-company">Cognizant Technology Solutions</span>
-                <span class="tl-period">2011 — 2015</span>
-              </div>
-            </div>
-            <div class="tl-role">Product Specialist</div>
-            <div class="tl-location">India</div>
-            <ul class="tl-highlights">
-              <li>Delivered technology solutions across enterprise accounts, building deep technical foundations across Java-based platforms and business process systems</li>
+              <li>Delivered end-to-end <strong>IBM Sterling OMS/WMS</strong> implementations for Staples.com, Kohls, Williams Sonoma, and other major US retailers across four consulting engagements</li>
+              <li>Progressed from hands-on Java/API development to leading teams of 5+ engineers — driving requirements, HLD/DLD design, and delivery accountability</li>
+              <li>Earned <strong>IBM Certified Solution Designer — Sterling OMS V9.2</strong></li>
             </ul>
           </div>
         </div>
@@ -652,48 +625,30 @@
       </div>
       <div class="writing-grid fade-in">
 
-        <a href="https://medium.com/@Projjal" target="_blank" rel="noopener noreferrer" class="writing-card">
+        <div class="writing-card">
           <div class="writing-meta">
             <span class="writing-read">4 min read</span>
           </div>
           <h3 class="writing-title">Why an EV Suitability Tool Was Worth Betting On</h3>
           <p class="writing-excerpt">The case for building a product with uncertain ROI — and how a data-driven approach to EV fleet analysis turned sceptics into advocates and won an industry award.</p>
-          <span class="writing-cta">
-            Read on Medium
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-          </span>
-        </a>
+        </div>
 
-        <a href="https://medium.com/@Projjal" target="_blank" rel="noopener noreferrer" class="writing-card">
+        <div class="writing-card">
           <div class="writing-meta">
             <span class="writing-read">5 min read</span>
           </div>
           <h3 class="writing-title">From OMS Consultant to Product Owner — What Actually Transferred</h3>
           <p class="writing-excerpt">The skills that crossed over, the mental models that needed rebuilding, and why deep implementation experience is an underrated advantage for a first-time PM.</p>
-          <span class="writing-cta">
-            Read on Medium
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-          </span>
-        </a>
+        </div>
 
-        <a href="https://medium.com/@Projjal" target="_blank" rel="noopener noreferrer" class="writing-card">
+        <div class="writing-card">
           <div class="writing-meta">
             <span class="writing-read">5 min read</span>
           </div>
           <h3 class="writing-title">Discovery and Delivery Are Not the Same Sport</h3>
           <p class="writing-excerpt">Why the skills that make you a great discovery PM actively work against you in delivery — and how to switch modes deliberately rather than accidentally.</p>
-          <span class="writing-cta">
-            Read on Medium
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-          </span>
-        </a>
+        </div>
 
-      </div>
-      <div class="writing-footer fade-in">
-        <a href="https://medium.com/@Projjal" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
-          View all articles on Medium
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left:6px" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-        </a>
       </div>
     </div>
   </section>
