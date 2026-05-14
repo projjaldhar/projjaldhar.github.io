@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Why an EV Suitability Tool Was Worth Betting On — Projjal Dhar">
+  <title>Why an EV Suitability Tool Was Worth Betting On — Projjal Dhar</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="writing.css">
+</head>
+<body>
+  <nav class="nav scrolled" id="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo" aria-label="Home">projjal.dhar</a>
+      <ul class="nav-links">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#work">Work</a></li>
+        <li><a href="index.html#experience">Experience</a></li>
+        <li><a href="index.html#writing">Writing</a></li>
+        <li><a href="index.html#contact" class="nav-cta">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <section class="writing-hero">
+      <div class="container">
+        <a href="index.html#writing" class="back-link fade-in">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+          All Writing
+        </a>
+        <div class="writing-hero-content fade-in">
+          <div class="writing-meta-row">
+            <span class="writing-category">Product Thinking</span>
+            <span class="writing-dot" aria-hidden="true">·</span>
+            <span class="writing-read-time">4 min read</span>
+          </div>
+          <h1 class="writing-title">Why an EV Suitability Tool Was Worth Betting On</h1>
+          <p class="writing-subtitle">The case for building a product with uncertain ROI — and how a data-driven approach to EV fleet analysis turned sceptics into advocates and won an industry award.</p>
+        </div>
+      </div>
+    </section>
+
+    <article class="writing-body">
+      <div class="container">
+        <div class="writing-content fade-in">
+
+          <p>When I first proposed an EV Suitability Tool to our product leadership at Verizon Connect, the room was quiet in that way that means "interesting idea, but prove it." Fleet electrification was a hot topic externally, but internally there was legitimate scepticism: would operators actually use it? Was this a feature or a distraction? How do you measure success when the goal is helping someone make a future decision they haven't made yet?</p>
+
+          <p>This is the story of how we built it anyway — and why the bet paid off.</p>
+
+          <h2>The Problem Worth Solving</h2>
+
+          <p>Fleet managers are under real pressure to electrify. Government mandates, corporate sustainability commitments, rising fuel costs — the direction of travel is clear. But the practical question of <em>which vehicles to replace, and when</em>, was opaque. Operators were making multi-hundred-thousand-dollar decisions based on gut feel and vendor sales pitches.</p>
+
+          <p>We had the data to do better. Every vehicle in a Verizon Connect-managed fleet was already generating rich telemetry: daily mileage, route profiles, dwell times, engine idling patterns. The raw ingredients for a genuine EV suitability analysis were sitting in our data warehouse, untouched.</p>
+
+          <h2>Building the Business Case</h2>
+
+          <p>The challenge wasn't technical feasibility — it was convincing stakeholders that the investment was worth it. My approach was to make the uncertainty explicit rather than paper over it.</p>
+
+          <p>I framed it as a low-cost discovery bet: three months, a small squad, a defined success metric (operator engagement with the output), and a clear kill condition. If operators looked at the tool once and never returned, we'd learned something valuable at low cost. If they came back — and started acting on the recommendations — we'd have proof of product-market fit in a category that competitors hadn't touched.</p>
+
+          <p>Framing it this way also forced a more honest conversation about what "success" actually meant for a tool helping people make long-horizon decisions. Traditional DAU metrics wouldn't tell the full story. We settled on a combination of session depth (did operators explore more than the summary view?), return rate (did they come back as their fleet cycles approached?), and qualitative signals from customer conversations.</p>
+
+          <h2>The Design Challenge</h2>
+
+          <p>The core analytical problem was translating telematics data into a recommendation a fleet manager could act on. This meant modelling three questions for each vehicle: Does this vehicle's daily pattern fit within current EV range? What would the TCO (total cost of ownership) look like over five years? And what's the confidence level, given data quality and route variability?</p>
+
+          <p>We deliberately avoided over-engineering the algorithm. Operators don't want a black box — they want something they can sanity-check against what they already know. We made the model's inputs transparent: "This vehicle averages 68 miles per day, rarely exceeds 90 miles, has a 4-hour dwell window at depot — here's why it's a strong candidate."</p>
+
+          <h2>The Outcome</h2>
+
+          <p>The tool launched to positive operator feedback and achieved +15 DAU within the first quarter. More meaningfully, it won the <strong>2024 autoXreport Innovator Award</strong> — an external validation that the industry recognised what we'd built as genuinely useful, not just marketing-friendly.</p>
+
+          <p>The lesson I took from this wasn't about EVs. It was about how to make the case for products with uncertain, long-horizon value. You make the uncertainty explicit, you constrain the bet, and you define what you're trying to learn before you start building.</p>
+
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <p>&copy; 2025 Projjal Dhar &middot; Dublin, Ireland</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -835,6 +835,73 @@ a.project-card:hover .project-cta { gap: 10px; }
 .tl-highlights strong { color: var(--text); font-weight: 600; }
 
 /* ============================================================
+   STACK — MARQUEE
+   ============================================================ */
+.stack-section { padding: 60px 0; overflow: hidden; }
+.stack-section .section-label { display: block; margin-bottom: 24px; }
+.stack-marquee-wrap { overflow: hidden; position: relative; }
+.stack-marquee-wrap::before,
+.stack-marquee-wrap::after {
+  content: '';
+  position: absolute;
+  top: 0; bottom: 0;
+  width: 120px;
+  z-index: 2;
+  pointer-events: none;
+}
+.stack-marquee-wrap::before {
+  left: 0;
+  background: linear-gradient(to right, #f0f2f5, transparent);
+}
+.stack-marquee-wrap::after {
+  right: 0;
+  background: linear-gradient(to left, #f0f2f5, transparent);
+}
+.stack-track {
+  display: flex;
+  gap: 16px;
+  width: max-content;
+  animation: stack-scroll 22s linear infinite;
+}
+.stack-marquee-wrap:hover .stack-track { animation-play-state: paused; }
+@keyframes stack-scroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.stack-logo-item { flex-shrink: 0; }
+.stack-logo-box {
+  width: 60px;
+  height: 60px;
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 1px 24px 0px rgba(0,0,0,0.07);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.stack-logo-box:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 6px 20px 0px rgba(0,0,0,0.10);
+}
+.stack-logo-box img { width: 32px; height: 32px; object-fit: contain; }
+
+/* ============================================================
+   IN SHORT
+   ============================================================ */
+.in-short-section { padding: 60px 0; }
+.in-short-inner { max-width: 720px; }
+.in-short-inner .section-label { margin-bottom: 16px; }
+.in-short-body {
+  font-size: clamp(1.1rem, 2.4vw, 1.45rem);
+  color: var(--text-2);
+  line-height: 1.72;
+  letter-spacing: -0.01em;
+}
+.in-short-body strong { color: var(--text); font-weight: 700; }
+
+/* ============================================================
    WRITING — THOUGHTS LIST
    ============================================================ */
 .thoughts-list {
