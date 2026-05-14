@@ -108,11 +108,8 @@ img { max-width: 100%; display: block; }
   position: relative;
 }
 .hero-grid {
-  display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
-  gap: 80px;
-  align-items: start;
   width: 100%;
+  max-width: 680px;
 }
 
 /* Left */
@@ -448,7 +445,7 @@ img { max-width: 100%; display: block; }
   gap: 0;
   position: relative;
   background: var(--bg);
-  transition: border-color var(--t), box-shadow var(--t);
+  transition: border-color 0.2s ease, box-shadow 0.25s ease, transform 0.25s ease, background 0.2s ease;
 }
 a.project-card {
   display: flex;
@@ -458,7 +455,9 @@ a.project-card {
 }
 a.project-card:hover {
   border-color: var(--card-accent, var(--accent));
-  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+  background: var(--bg-muted);
+  box-shadow: 0 16px 48px -8px rgba(0, 0, 0, 0.12), 0 0 0 1px var(--card-accent, var(--accent));
+  transform: translateY(-6px);
 }
 
 .project-number {
@@ -779,6 +778,14 @@ a.project-card:hover .project-cta { gap: 10px; }
 .tl-logo--verizon { background: #cd040b; color: #fff; }
 .tl-logo--rim      { background: #1a1a2e; color: #fff; }
 .tl-logo--ibm      { background: #1469C8; color: #fff; }
+.tl-company-logo {
+  height: 44px;
+  width: auto;
+  max-width: 160px;
+  object-fit: contain;
+  display: block;
+  margin-bottom: 4px;
+}
 .tl-company {
   font-size: 0.95rem;
   font-weight: 700;
@@ -974,13 +981,9 @@ a.project-card:hover .project-cta { gap: 10px; }
    RESPONSIVE
    ============================================================ */
 @media (max-width: 1024px) {
-  .hero-grid { grid-template-columns: 1fr; gap: 48px; }
-  .hero-right { flex-direction: row; flex-wrap: wrap; align-items: center; }
-  .hero-stats { flex: 1; min-width: 260px; }
   .about-grid { grid-template-columns: 1fr; gap: 40px; }
   .projects-grid { padding-bottom: 0; }
   .projects-grid > :nth-child(even) { transform: none; }
-  .skills-grid { grid-template-columns: 1fr 1fr; }
   .writing-grid { grid-template-columns: 1fr 1fr; }
 }
 
