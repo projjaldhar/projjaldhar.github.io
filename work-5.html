@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Staples.com Order Management System — Work project by Projjal Dhar">
+  <title>Staples.com OMS — Projjal Dhar</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="project.css">
+</head>
+<body>
+  <nav class="nav scrolled" id="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo" aria-label="Home">PD</a>
+      <ul class="nav-links">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#work">Work</a></li>
+        <li><a href="index.html#projects">&lt;/DEV&gt;</a></li>
+        <li><a href="index.html#skills">Skills</a></li>
+        <li><a href="index.html#experience">Experience</a></li>
+        <li><a href="index.html#contact" class="nav-cta">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <section class="proj-hero">
+      <div class="container">
+        <a href="index.html#work" class="back-link fade-in" aria-label="Back to work projects">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+          All Work
+        </a>
+        <div class="proj-hero-content">
+          <div class="proj-hero-left fade-in">
+            <div class="proj-number" aria-hidden="true">IBM / Infosys · 2009–2011</div>
+            <h1 class="proj-title">Staples.com<br><span class="accent">Order Management System</span></h1>
+            <p class="proj-subtitle">IBM Sterling OMS implementation for Staples.com — delivering a scalable order management platform capable of handling enterprise-level e-commerce growth, covering YOMS, OFL-LCA, PO management, and supply collaboration.</p>
+            <div class="proj-tags">
+              <span class="tag">IBM Sterling OMS</span>
+              <span class="tag">Supply Chain</span>
+              <span class="tag">E-commerce</span>
+              <span class="tag">Java</span>
+            </div>
+          </div>
+          <div class="proj-hero-right fade-in">
+            <div class="proj-stat-grid">
+              <div class="proj-stat">
+                <span class="proj-stat-num">Enterprise</span>
+                <span class="proj-stat-label">Scale OMS implementation</span>
+              </div>
+              <div class="proj-stat">
+                <span class="proj-stat-num">Staples</span>
+                <span class="proj-stat-label">One of the US's largest retailers</span>
+              </div>
+              <div class="proj-stat">
+                <span class="proj-stat-num">YOMS</span>
+                <span class="proj-stat-label">+ OFL-LCA implemented</span>
+              </div>
+              <div class="proj-stat">
+                <span class="proj-stat-num">NAD SBU</span>
+                <span class="proj-stat-label">Strategic Business Unit delivery</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="proj-body">
+      <div class="container">
+        <div class="proj-layout">
+          <div class="proj-main">
+
+            <div class="proj-section fade-in">
+              <h2 class="proj-section-title">Overview</h2>
+              <p class="proj-text">Staples.com required an order management system capable of supporting the future scale of their e-commerce business — handling millions of orders across their NAD (North American Division) Strategic Business Unit. The existing infrastructure lacked the flexibility and scalability that enterprise-grade Sterling OMS could provide.</p>
+              <p class="proj-text">As part of the Infosys delivery team, I worked on the implementation of IBM Sterling's YOMS (Your Order Management System) and OFL-LCA (Order Fulfilment Logic – Lifecycle and Availability) components, covering the full spectrum from PO creation and management through to supply collaboration and transfer order workflows.</p>
+            </div>
+
+            <div class="proj-section fade-in">
+              <h2 class="proj-section-title">The Problem</h2>
+              <div class="problem-grid">
+                <div class="problem-card">
+                  <div class="problem-icon" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+                  </div>
+                  <h3>Scalability ceiling</h3>
+                  <p>The existing OMS was not built to handle the projected growth of Staples.com's e-commerce volume, creating a strategic risk for the business.</p>
+                </div>
+                <div class="problem-card">
+                  <div class="problem-icon" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6M9 12h6M9 15h4"/></svg>
+                  </div>
+                  <h3>Supply chain visibility gaps</h3>
+                  <p>Purchase order management, transfer orders, and supplier collaboration were handled in disconnected systems with no unified view.</p>
+                </div>
+                <div class="problem-card">
+                  <div class="problem-icon" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                  </div>
+                  <h3>Complex fulfilment logic</h3>
+                  <p>Lifecycle and availability calculations for a retailer of Staples' breadth required a sophisticated, configurable rules engine rather than custom-built logic.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="proj-section fade-in">
+              <h2 class="proj-section-title">Solution &amp; Architecture</h2>
+              <p class="proj-text">The implementation leveraged IBM Sterling's proven OMS framework, configured for Staples.com's specific business rules. The YOMS component handled customer-facing order management lifecycle, while OFL-LCA managed the availability and fulfilment routing logic. The Supply Collaboration module connected Staples to its supplier network for PO, transfer, and removal order management.</p>
+              <div class="arch-flow">
+                <div class="arch-step">
+                  <span class="arch-step-num">1</span>
+                  <div>
+                    <strong>Requirements &amp; Design</strong>
+                    <p>Business requirements gathered and mapped to IBM Sterling capabilities; HLD and DLD produced</p>
+                  </div>
+                </div>
+                <div class="arch-arrow" aria-hidden="true">→</div>
+                <div class="arch-step">
+                  <span class="arch-step-num">2</span>
+                  <div>
+                    <strong>YOMS Configuration</strong>
+                    <p>Order management lifecycle configured including order capture, modification, and cancellation flows</p>
+                  </div>
+                </div>
+                <div class="arch-arrow" aria-hidden="true">→</div>
+                <div class="arch-step">
+                  <span class="arch-step-num">3</span>
+                  <div>
+                    <strong>OFL-LCA Implementation</strong>
+                    <p>Fulfilment logic and availability calculation rules implemented and validated against business scenarios</p>
+                  </div>
+                </div>
+                <div class="arch-arrow" aria-hidden="true">→</div>
+                <div class="arch-step">
+                  <span class="arch-step-num">4</span>
+                  <div>
+                    <strong>Supply Collaboration</strong>
+                    <p>PO creation, transfer orders, and removal orders configured via Supply Collaboration module</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="proj-section fade-in">
+              <h2 class="proj-section-title">Key Features</h2>
+              <ul class="feature-list">
+                <li class="feature-item">
+                  <span class="feature-dot" aria-hidden="true"></span>
+                  <div><strong>YOMS order lifecycle management</strong> — full customer order lifecycle from capture through fulfilment, modification, and cancellation with configurable business rules</div>
+                </li>
+                <li class="feature-item">
+                  <span class="feature-dot" aria-hidden="true"></span>
+                  <div><strong>OFL-LCA availability engine</strong> — sophisticated fulfilment logic calculating real-time availability, sourcing rules, and delivery promise dates at order capture</div>
+                </li>
+                <li class="feature-item">
+                  <span class="feature-dot" aria-hidden="true"></span>
+                  <div><strong>Purchase order management</strong> — end-to-end PO creation, approval workflows, and supplier acknowledgement through the Supply Collaboration module</div>
+                </li>
+                <li class="feature-item">
+                  <span class="feature-dot" aria-hidden="true"></span>
+                  <div><strong>Transfer &amp; removal order processing</strong> — inter-warehouse transfer orders and inventory removal orders integrated into the unified supply chain workflow</div>
+                </li>
+                <li class="feature-item">
+                  <span class="feature-dot" aria-hidden="true"></span>
+                  <div><strong>Java API customisation</strong> — bespoke business logic implemented via Sterling's Java API framework to meet Staples-specific process requirements beyond out-of-the-box configuration</div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="proj-section fade-in">
+              <h2 class="proj-section-title">Impact &amp; Outcomes</h2>
+              <p class="proj-text">The Sterling OMS implementation provided Staples.com with a scalable, enterprise-grade order management foundation built to support future growth. The phased delivery approach — implementing YOMS and OFL-LCA first before extending to supply collaboration — allowed the business to go live with core functionality while the broader implementation continued.</p>
+              <p class="proj-text">Working on a deployment of this scale — for one of the largest office retail e-commerce operations in the US — gave me a deep understanding of how complex enterprise order management systems are designed, configured, and tested, forming the technical foundation that I later applied as a Product Owner across OMS and supply chain domains.</p>
+            </div>
+
+            <div class="proj-section fade-in">
+              <h2 class="proj-section-title">Lessons Learned</h2>
+              <ul class="feature-list">
+                <li class="feature-item">
+                  <span class="feature-dot" aria-hidden="true"></span>
+                  <div><strong>Configuration before customisation</strong> — every customisation added long-term maintenance burden. Exhausting Sterling's native configuration options before writing custom Java saved significant rework in later implementation phases.</div>
+                </li>
+                <li class="feature-item">
+                  <span class="feature-dot" aria-hidden="true"></span>
+                  <div><strong>High-level design documents are an investment, not overhead</strong> — the discipline of producing HLD and DLD before build caught architectural misalignments early, when they were cheap to fix rather than expensive to unwind mid-implementation.</div>
+                </li>
+                <li class="feature-item">
+                  <span class="feature-dot" aria-hidden="true"></span>
+                  <div><strong>Phased delivery de-risks enterprise implementations</strong> — shipping YOMS and OFL-LCA as a first phase before adding supply collaboration allowed the client to validate core functionality and build confidence before expanding scope.</div>
+                </li>
+                <li class="feature-item">
+                  <span class="feature-dot" aria-hidden="true"></span>
+                  <div><strong>Enterprise client expectations need active management</strong> — Staples had strong opinions about implementation approach. Regular structured communication on scope, progress, and trade-offs was as important as the technical delivery itself.</div>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+
+          <aside class="proj-sidebar fade-in" aria-label="Project details">
+            <div class="sidebar-card">
+              <h3 class="sidebar-title">Tech Stack</h3>
+              <ul class="sidebar-tags">
+                <li class="skill-tag accent-tag">IBM Sterling OMS</li>
+                <li class="skill-tag accent-tag">YOMS / OFL-LCA</li>
+                <li class="skill-tag accent-tag">Supply Collaboration</li>
+                <li class="skill-tag">Java / Java APIs</li>
+                <li class="skill-tag">XML / XSD</li>
+                <li class="skill-tag">SQL</li>
+              </ul>
+            </div>
+            <div class="sidebar-card">
+              <h3 class="sidebar-title">My Role</h3>
+              <p class="sidebar-text">Systems Engineer — implemented YOMS and OFL-LCA components, configured Supply Collaboration module, developed custom Java API extensions, and contributed to HLD and DLD documentation.</p>
+            </div>
+            <div class="sidebar-card">
+              <h3 class="sidebar-title">Company</h3>
+              <p class="sidebar-text">Infosys Limited · 2009–2011 · Client: Staples Inc.</p>
+            </div>
+            <div class="sidebar-card">
+              <h3 class="sidebar-title">Other Work Projects</h3>
+              <a href="work-6.html" class="sidebar-proj-link">
+                <span class="sidebar-proj-num">06</span>
+                <span>Kohls Global Inventory Visibility</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+              <a href="work-8.html" class="sidebar-proj-link">
+                <span class="sidebar-proj-num">08</span>
+                <span>Williams Sonoma OMS</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+              <a href="work-4.html" class="sidebar-proj-link">
+                <span class="sidebar-proj-num">04</span>
+                <span>Airline Home Delivery Platform</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <p>&copy; 2025 Projjal Dhar &middot; Dublin, Ireland</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="EV Suitability Tool — Work project by Projjal Dhar">
+  <title>EV Suitability Tool — Projjal Dhar</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="project.css">
+</head>
+<body>
+  <nav class="nav scrolled" id="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo" aria-label="Home">PD</a>
+      <ul class="nav-links">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#work">Work</a></li>
+        <li><a href="index.html#projects">&lt;/DEV&gt;</a></li>
+        <li><a href="index.html#skills">Skills</a></li>
+        <li><a href="index.html#experience">Experience</a></li>
+        <li><a href="index.html#contact" class="nav-cta">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <section class="proj-hero">
+      <div class="container">
+        <a href="index.html#work" class="back-link fade-in" aria-label="Back to work projects">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+          All Work
+        </a>
+        <div class="proj-hero-content">
+          <div class="proj-hero-left fade-in">
+            <div class="proj-number" aria-hidden="true">Verizon Connect · 2023–2024</div>
+            <h1 class="proj-title">EV Suitability<br><span class="accent">Tool</span></h1>
+            <p class="proj-subtitle">A data-driven analytics tool that helps fleet managers identify which vehicles in their fleet are ready for EV transition — using real mileage, route, and dwell-time data to replace guesswork with evidence.</p>
+            <div class="proj-tags">
+              <span class="tag">Fleet Analytics</span>
+              <span class="tag">EV Strategy</span>
+              <span class="tag">Data Modelling</span>
+              <span class="tag">Sustainability</span>
+            </div>
+          </div>
+          <div class="proj-hero-right fade-in">
+            <div class="proj-stat-grid">
+              <div class="proj-stat">
+                <span class="proj-stat-num">+15</span>
+                <span class="proj-stat-label">DAU post-launch</span>
+              </div>
+              <div class="proj-stat">
+                <span class="proj-stat-num">2024</span>
+                <span class="proj-stat-label">autoXreport Innovator Award</span>
+              </div>
+              <div class="proj-stat">
+                <span class="proj-stat-num">Data-driven</span>
+                <span class="proj-stat-label">EV transition decisions</span>
+              </div>
+              <div class="proj-stat">
+                <span class="proj-stat-num">Live</span>
+                <span class="proj-stat-label">In production at Verizon Connect</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="proj-body">
+      <div class="container">
+        <div class="proj-layout">
+          <div class="proj-main">
+
+            <div class="proj-section fade-in">
+              <h2 class="proj-section-title">Overview</h2>
+              <p class="proj-text">Fleet electrification is one of the biggest operational transitions fleet managers face — but most are making EV purchasing decisions based on intuition, vendor claims, or generic industry benchmarks rather than their own fleet's actual usage patterns. The result is expensive mismatches: EVs purchased for routes that exceed their range, or combustion vehicles kept when EVs would already be more economical.</p>
+              <p class="proj-text">The EV Suitability Tool changes that by analysing each vehicle's real operational data — daily mileage, route profiles, dwell times, and charging opportunity windows — to generate a per-vehicle suitability score and ROI projection, giving fleet managers the evidence they need to make confident electrification decisions.</p>
+            </div>
+
+            <div class="proj-section fade-in">
+              <h2 class="proj-section-title">The Problem</h2>
+              <div class="problem-grid">
+                <div class="problem-card">
+                  <div class="problem-icon" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                  </div>
+                  <h3>EV decisions made on instinct</h3>
+                  <p>Fleet managers lacked a structured, data-backed way to evaluate which vehicles were genuinely suitable for EV replacement versus which would fail on range.</p>
+                </div>
+                <div class="problem-card">
+                  <div class="problem-icon" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                  </div>
+                  <h3>Unclear ROI on electrification</h3>
+                  <p>Without fuel cost vs. charging cost modelling per vehicle, CFOs couldn't build business cases for EV investment with confidence.</p>
+                </div>
+                <div class="problem-card">
+                  <div class="problem-icon" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                  </div>
+                  <h3>Range anxiety blocking adoption</h3>
+                  <p>Uncertainty about whether EVs could handle real-world routes caused hesitation, even for fleets where the data would show a clear green light for transition.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="proj-section fade-in">
+              <h2 class="proj-section-title">Solution &amp; Architecture</h2>
+              <p class="proj-text">The tool processes each vehicle's historical telematics data through an analysis pipeline that evaluates daily mileage distribution, route length profiles, overnight dwell patterns (charging opportunity), and operational schedules. This feeds a scoring model that outputs a suitability rating, estimated annual fuel savings, and a payback period estimate per vehicle.</p>
+              <div class="arch-flow">
+                <div class="arch-step">
+                  <span class="arch-step-num">1</span>
+                  <div>
+                    <strong>Telematics Analysis</strong>
+                    <p>Historical trip data analysed for daily mileage, route patterns, and dwell time windows</p>
+                  </div>
+                </div>
+                <div class="arch-arrow" aria-hidden="true">→</div>
+                <div class="arch-step">
+                  <span class="arch-step-num">2</span>
+                  <div>
+                    <strong>EV Model Matching</strong>
+                    <p>Vehicle profile matched against available EV models for range compatibility and operational fit</p>
+                  </div>
+                </div>
+                <div class="arch-arrow" aria-hidden="true">→</div>
+                <div class="arch-step">
+                  <span class="arch-step-num">3</span>
+                  <div>
+                    <strong>ROI Calculation</strong>
+                    <p>Fuel cost vs. charging cost modelled per vehicle using regional energy rates and usage patterns</p>
+                  </div>
+                </div>
+                <div class="arch-arrow" aria-hidden="true">→</div>
+                <div class="arch-step">
+                  <span class="arch-step-num">4</span>
+                  <div>
+                    <strong>Suitability Dashboard</strong>
+                    <p>Fleet-level and per-vehicle scores surfaced with recommended EV alternatives and payback periods</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="proj-section fade-in">
+              <h2 class="proj-section-title">Key Features</h2>
+              <ul class="feature-list">
+                <li class="feature-item">
+                  <span class="feature-dot" aria-hidden="true"></span>
+                  <div><strong>Per-vehicle suitability score</strong> — each vehicle gets a clear green/amber/red rating based on its actual usage pattern vs. EV capability thresholds</div>
+                </li>
+                <li class="feature-item">
+                  <span class="feature-dot" aria-hidden="true"></span>
+                  <div><strong>ROI and payback modelling</strong> — annual fuel savings, total cost of ownership comparison, and estimated payback period calculated per vehicle using real consumption data</div>
+                </li>
+                <li class="feature-item">
+                  <span class="feature-dot" aria-hidden="true"></span>
+                  <div><strong>Charging opportunity analysis</strong> — identifies overnight dwell windows and depot return patterns to assess whether the operational schedule supports charging without route disruption</div>
+                </li>
+                <li class="feature-item">
+                  <span class="feature-dot" aria-hidden="true"></span>
+                  <div><strong>Fleet-level summary view</strong> — aggregated view showing what percentage of the fleet is EV-ready today, what's borderline, and what needs further infrastructure before transition</div>
+                </li>
+                <li class="feature-item">
+                  <span class="feature-dot" aria-hidden="true"></span>
+                  <div><strong>Exportable reports</strong> — PDF and CSV export of suitability analysis for sharing with CFOs, procurement teams, and EV vendors during purchasing decisions</div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="proj-section fade-in">
+              <h2 class="proj-section-title">Impact &amp; Outcomes</h2>
+              <p class="proj-text">The EV Suitability Tool won the 2024 autoXreport Innovator Award and drove +15 daily active users within the first quarter post-launch. More significantly, it opened a new commercial conversation with fleet managers who were previously passive — giving the sales team a data-led entry point for EV transition discussions.</p>
+              <p class="proj-text">The product validated a key hypothesis: fleet managers don't resist EV adoption — they resist making expensive decisions without evidence. When the tool showed clear suitability and a credible payback period, adoption conversations moved significantly faster.</p>
+            </div>
+
+            <div class="proj-section fade-in">
+              <h2 class="proj-section-title">Lessons Learned</h2>
+              <ul class="feature-list">
+                <li class="feature-item">
+                  <span class="feature-dot" aria-hidden="true"></span>
+                  <div><strong>Sustainability sells when backed by ROI</strong> — environmental messaging alone didn't move fleet managers. Pairing it with a concrete payback period and cost savings figure changed the conversation entirely.</div>
+                </li>
+                <li class="feature-item">
+                  <span class="feature-dot" aria-hidden="true"></span>
+                  <div><strong>The CFO is the real user</strong> — fleet managers loved the tool, but the decisions were made by finance. Building an exportable, boardroom-ready report format increased the tool's influence beyond the platform UI.</div>
+                </li>
+                <li class="feature-item">
+                  <span class="feature-dot" aria-hidden="true"></span>
+                  <div><strong>Charging infrastructure is the hidden blocker</strong> — the tool surfaced cases where the vehicle was range-suitable but depot charging wasn't available. Adding an infrastructure readiness flag to the output prevented false-positive recommendations.</div>
+                </li>
+                <li class="feature-item">
+                  <span class="feature-dot" aria-hidden="true"></span>
+                  <div><strong>Starting with a clear green/amber/red score was the right call</strong> — early prototypes showed raw metrics only. Adding a simple three-tier verdict as the primary output dramatically reduced time-to-insight for fleet managers reviewing large fleets.</div>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+
+          <aside class="proj-sidebar fade-in" aria-label="Project details">
+            <div class="sidebar-card">
+              <h3 class="sidebar-title">Tech Stack</h3>
+              <ul class="sidebar-tags">
+                <li class="skill-tag accent-tag">Telematics Analytics</li>
+                <li class="skill-tag accent-tag">Data Modelling</li>
+                <li class="skill-tag accent-tag">ROI Modelling</li>
+                <li class="skill-tag">Fleet Intelligence</li>
+                <li class="skill-tag">Reporting</li>
+                <li class="skill-tag">Dashboard Design</li>
+              </ul>
+            </div>
+            <div class="sidebar-card">
+              <h3 class="sidebar-title">My Role</h3>
+              <p class="sidebar-text">Product Owner — conceived the product vision, led customer discovery with fleet managers and sustainability leads, defined the suitability scoring model, and owned the go-to-market strategy that led to the Innovator Award.</p>
+            </div>
+            <div class="sidebar-card">
+              <h3 class="sidebar-title">Company</h3>
+              <p class="sidebar-text">Verizon Connect · Dublin, Ireland · 2023–2024</p>
+            </div>
+            <div class="sidebar-card">
+              <h3 class="sidebar-title">Other Work Projects</h3>
+              <a href="work-1.html" class="sidebar-proj-link">
+                <span class="sidebar-proj-num">01</span>
+                <span>AI/ML Driver &amp; Vehicle Mapping</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+              <a href="work-3.html" class="sidebar-proj-link">
+                <span class="sidebar-proj-num">03</span>
+                <span>CARB / SMOG Fleet Compliance</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+              <a href="work-7.html" class="sidebar-proj-link">
+                <span class="sidebar-proj-num">07</span>
+                <span>CPRA Privacy Portal</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <p>&copy; 2025 Projjal Dhar &middot; Dublin, Ireland</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

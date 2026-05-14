@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Airline Home Delivery Platform — Work project by Projjal Dhar">
+  <title>Airline Home Delivery Platform — Projjal Dhar</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="project.css">
+</head>
+<body>
+  <nav class="nav scrolled" id="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo" aria-label="Home">PD</a>
+      <ul class="nav-links">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#work">Work</a></li>
+        <li><a href="index.html#projects">&lt;/DEV&gt;</a></li>
+        <li><a href="index.html#skills">Skills</a></li>
+        <li><a href="index.html#experience">Experience</a></li>
+        <li><a href="index.html#contact" class="nav-cta">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <section class="proj-hero">
+      <div class="container">
+        <a href="index.html#work" class="back-link fade-in" aria-label="Back to work projects">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+          All Work
+        </a>
+        <div class="proj-hero-content">
+          <div class="proj-hero-left fade-in">
+            <div class="proj-number" aria-hidden="true">Retail inMotion · 2019–2022</div>
+            <h1 class="proj-title">Airline Home<br><span class="accent">Delivery Platform</span></h1>
+            <p class="proj-subtitle">An end-to-end order management platform enabling passengers to order onboard during a flight and receive delivery to their home after landing — built from scratch and rolled out across a European airline network.</p>
+            <div class="proj-tags">
+              <span class="tag">E-commerce</span>
+              <span class="tag">OMS</span>
+              <span class="tag">Airline Retail</span>
+              <span class="tag">Fulfilment</span>
+            </div>
+          </div>
+          <div class="proj-hero-right fade-in">
+            <div class="proj-stat-grid">
+              <div class="proj-stat">
+                <span class="proj-stat-num">Multi-airline</span>
+                <span class="proj-stat-label">European carrier rollout</span>
+              </div>
+              <div class="proj-stat">
+                <span class="proj-stat-num">End-to-end</span>
+                <span class="proj-stat-label">Order to doorstep pipeline</span>
+              </div>
+              <div class="proj-stat">
+                <span class="proj-stat-num">0→1</span>
+                <span class="proj-stat-label">Built from scratch</span>
+              </div>
+              <div class="proj-stat">
+                <span class="proj-stat-num">Live</span>
+                <span class="proj-stat-label">In production across airline clients</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="proj-body">
+      <div class="container">
+        <div class="proj-layout">
+          <div class="proj-main">
+
+            <div class="proj-section fade-in">
+              <h2 class="proj-section-title">Overview</h2>
+              <p class="proj-text">Airline retail has traditionally been limited to what fits in an onboard trolley. Home delivery represented a completely new revenue channel — allowing passengers to browse a broader catalogue during their flight and receive purchases at home after landing. But enabling it required solving a complex operational puzzle: connecting in-flight ordering to ground logistics without any existing infrastructure.</p>
+              <p class="proj-text">As Product Owner, I designed and delivered the end-to-end platform from zero — spanning passenger-facing ordering, crew fulfilment workflows, post-flight order routing, and last-mile delivery integrations — and then managed the rollout across multiple airline clients with their distinct operational requirements.</p>
+            </div>
+
+            <div class="proj-section fade-in">
+              <h2 class="proj-section-title">The Problem</h2>
+              <div class="problem-grid">
+                <div class="problem-card">
+                  <div class="problem-icon" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12H3l9-9 9 9h-2"/><path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-7"/></svg>
+                  </div>
+                  <h3>No home delivery OMS for airlines</h3>
+                  <p>No off-the-shelf platform handled the unique combination of in-flight ordering, crew handling, customs constraints, and post-flight last-mile delivery.</p>
+                </div>
+                <div class="problem-card">
+                  <div class="problem-icon" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/></svg>
+                  </div>
+                  <h3>Disconnected crew and logistics workflows</h3>
+                  <p>Cabin crew, ground handlers, and delivery partners operated in silos with no shared order visibility — making fulfilment coordination a manual, error-prone process.</p>
+                </div>
+                <div class="problem-card">
+                  <div class="problem-icon" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                  </div>
+                  <h3>Multi-airline complexity</h3>
+                  <p>Each airline had different crew systems, baggage policies, customs rules, and last-mile partners — requiring a flexible platform rather than a single rigid implementation.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="proj-section fade-in">
+              <h2 class="proj-section-title">Solution &amp; Architecture</h2>
+              <p class="proj-text">The platform was designed as a multi-tenant OMS with airline-specific configuration layers. A passenger-facing ordering interface (accessible via seatback or mobile) fed orders into a central management system, which routed them to crew tablets for in-flight handling, then passed confirmed orders to ground logistics and last-mile delivery partners after landing.</p>
+              <div class="arch-flow">
+                <div class="arch-step">
+                  <span class="arch-step-num">1</span>
+                  <div>
+                    <strong>Onboard Ordering</strong>
+                    <p>Passengers browse and order via seatback or personal device during flight</p>
+                  </div>
+                </div>
+                <div class="arch-arrow" aria-hidden="true">→</div>
+                <div class="arch-step">
+                  <span class="arch-step-num">2</span>
+                  <div>
+                    <strong>Crew Workflow</strong>
+                    <p>Crew tablets receive and confirm orders; handle payment and packing at landing</p>
+                  </div>
+                </div>
+                <div class="arch-arrow" aria-hidden="true">→</div>
+                <div class="arch-step">
+                  <span class="arch-step-num">3</span>
+                  <div>
+                    <strong>Ground Handoff</strong>
+                    <p>Confirmed orders routed to ground handlers and customs clearance workflows</p>
+                  </div>
+                </div>
+                <div class="arch-arrow" aria-hidden="true">→</div>
+                <div class="arch-step">
+                  <span class="arch-step-num">4</span>
+                  <div>
+                    <strong>Last-mile Delivery</strong>
+                    <p>Orders dispatched to delivery partners with tracking and notification sent to passengers</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="proj-section fade-in">
+              <h2 class="proj-section-title">Key Features</h2>
+              <ul class="feature-list">
+                <li class="feature-item">
+                  <span class="feature-dot" aria-hidden="true"></span>
+                  <div><strong>In-flight ordering interface</strong> — mobile-optimised catalogue and checkout designed for low-connectivity cabin environments, with offline-capable order queuing</div>
+                </li>
+                <li class="feature-item">
+                  <span class="feature-dot" aria-hidden="true"></span>
+                  <div><strong>Crew management tablet app</strong> — real-time order dashboard for cabin crew covering order acceptance, packing confirmation, and payment processing</div>
+                </li>
+                <li class="feature-item">
+                  <span class="feature-dot" aria-hidden="true"></span>
+                  <div><strong>Multi-carrier last-mile integration</strong> — configurable delivery partner connectors enabling each airline to use their preferred ground logistics and postal networks</div>
+                </li>
+                <li class="feature-item">
+                  <span class="feature-dot" aria-hidden="true"></span>
+                  <div><strong>Customs and duty management</strong> — automated duty calculation and customs documentation generation based on destination country and product category</div>
+                </li>
+                <li class="feature-item">
+                  <span class="feature-dot" aria-hidden="true"></span>
+                  <div><strong>Post-flight order tracking</strong> — passengers receive delivery confirmation and tracking link automatically, closing the loop on the purchase experience</div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="proj-section fade-in">
+              <h2 class="proj-section-title">Impact &amp; Outcomes</h2>
+              <p class="proj-text">The platform was successfully deployed across multiple European airline clients, enabling a home delivery revenue channel that had not previously existed in their retail operations. Each airline rollout validated the multi-tenant architecture — airlines were onboarded with their specific configurations without requiring platform rebuilds.</p>
+              <p class="proj-text">The zero-to-one nature of this build — designing for a customer journey that spanned the air and ground with no existing playbook — required close collaboration with airline operations, cabin crew unions, customs authorities, and delivery partners simultaneously, making it one of the most complex stakeholder environments I've navigated in a product role.</p>
+            </div>
+
+            <div class="proj-section fade-in">
+              <h2 class="proj-section-title">Lessons Learned</h2>
+              <ul class="feature-list">
+                <li class="feature-item">
+                  <span class="feature-dot" aria-hidden="true"></span>
+                  <div><strong>The crew experience is the product's critical path</strong> — a perfect passenger-facing UI meant nothing if crew couldn't manage orders efficiently at 35,000 feet. Investing in the crew tablet workflow early, with real cabin crew in usability sessions, prevented the most expensive failures.</div>
+                </li>
+                <li class="feature-item">
+                  <span class="feature-dot" aria-hidden="true"></span>
+                  <div><strong>Offline-first design is non-negotiable in-flight</strong> — cabin connectivity is unpredictable. Discovering this during testing rather than design required significant rework. Every ordering and crew flow needed to function without a live connection.</div>
+                </li>
+                <li class="feature-item">
+                  <span class="feature-dot" aria-hidden="true"></span>
+                  <div><strong>Customs complexity scales with ambition</strong> — the broader the product catalogue, the more complex the duty and restriction matrix. Scoping the initial catalogue to low-duty, non-restricted categories made the first airline launch significantly faster.</div>
+                </li>
+                <li class="feature-item">
+                  <span class="feature-dot" aria-hidden="true"></span>
+                  <div><strong>Multi-client products need configuration, not customisation</strong> — early airline clients wanted bespoke features that would have forked the codebase. Holding the line on a configurable core saved long-term maintenance cost and made subsequent client onboarding much faster.</div>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+
+          <aside class="proj-sidebar fade-in" aria-label="Project details">
+            <div class="sidebar-card">
+              <h3 class="sidebar-title">Tech Stack</h3>
+              <ul class="sidebar-tags">
+                <li class="skill-tag accent-tag">Order Management</li>
+                <li class="skill-tag accent-tag">E-commerce Platform</li>
+                <li class="skill-tag accent-tag">Last-mile Logistics</li>
+                <li class="skill-tag">Airline Retail</li>
+                <li class="skill-tag">Multi-tenant Architecture</li>
+                <li class="skill-tag">Customs &amp; Duty</li>
+              </ul>
+            </div>
+            <div class="sidebar-card">
+              <h3 class="sidebar-title">My Role</h3>
+              <p class="sidebar-text">Product Owner — designed the product from scratch, led discovery with airline operations and cabin crew, owned the backlog and delivery roadmap, managed multi-airline rollout, and defined the multi-tenant configuration model.</p>
+            </div>
+            <div class="sidebar-card">
+              <h3 class="sidebar-title">Company</h3>
+              <p class="sidebar-text">Retail inMotion · Dublin, Ireland · 2019–2022</p>
+            </div>
+            <div class="sidebar-card">
+              <h3 class="sidebar-title">Other Work Projects</h3>
+              <a href="work-5.html" class="sidebar-proj-link">
+                <span class="sidebar-proj-num">05</span>
+                <span>Staples.com Order Management System</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+              <a href="work-6.html" class="sidebar-proj-link">
+                <span class="sidebar-proj-num">06</span>
+                <span>Kohls Global Inventory Visibility</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+              <a href="work-8.html" class="sidebar-proj-link">
+                <span class="sidebar-proj-num">08</span>
+                <span>Williams Sonoma OMS</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <p>&copy; 2025 Projjal Dhar &middot; Dublin, Ireland</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

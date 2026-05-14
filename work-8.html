@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Williams Sonoma Order Management System — Work project by Projjal Dhar">
+  <title>Williams Sonoma OMS — Projjal Dhar</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="project.css">
+</head>
+<body>
+  <nav class="nav scrolled" id="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo" aria-label="Home">PD</a>
+      <ul class="nav-links">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#work">Work</a></li>
+        <li><a href="index.html#projects">&lt;/DEV&gt;</a></li>
+        <li><a href="index.html#skills">Skills</a></li>
+        <li><a href="index.html#experience">Experience</a></li>
+        <li><a href="index.html#contact" class="nav-cta">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <section class="proj-hero">
+      <div class="container">
+        <a href="index.html#work" class="back-link fade-in" aria-label="Back to work projects">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+          All Work
+        </a>
+        <div class="proj-hero-content">
+          <div class="proj-hero-left fade-in">
+            <div class="proj-number" aria-hidden="true">IBM / Cognizant · 2014–2015</div>
+            <h1 class="proj-title">Williams Sonoma<br><span class="accent">Order Management System</span></h1>
+            <p class="proj-subtitle">End-to-end IBM Sterling OMS migration for Williams Sonoma's DTC channel — replacing PKMS, RMS, and DTCMO with a unified Sterling fulfilment platform through a phased implementation that kept live operations running throughout.</p>
+            <div class="proj-tags">
+              <span class="tag">IBM Sterling OMS</span>
+              <span class="tag">DTC Fulfilment</span>
+              <span class="tag">System Integration</span>
+              <span class="tag">Legacy Migration</span>
+            </div>
+          </div>
+          <div class="proj-hero-right fade-in">
+            <div class="proj-stat-grid">
+              <div class="proj-stat">
+                <span class="proj-stat-num">End-to-end</span>
+                <span class="proj-stat-label">Sterling DTC migration</span>
+              </div>
+              <div class="proj-stat">
+                <span class="proj-stat-num">3 systems</span>
+                <span class="proj-stat-label">PKMS, RMS, DTCMO replaced</span>
+              </div>
+              <div class="proj-stat">
+                <span class="proj-stat-num">Phased</span>
+                <span class="proj-stat-label">Zero-downtime delivery</span>
+              </div>
+              <div class="proj-stat">
+                <span class="proj-stat-num">Williams<br>Sonoma</span>
+                <span class="proj-stat-label">Premium US home retail brand</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="proj-body">
+      <div class="container">
+        <div class="proj-layout">
+          <div class="proj-main">
+
+            <div class="proj-section fade-in">
+              <h2 class="proj-section-title">Overview</h2>
+              <p class="proj-text">Williams Sonoma operated a complex direct-to-consumer order management landscape across multiple legacy systems — PKMS for warehouse management, RMS for retail management, and DTCMO for direct-to-consumer operations. These systems operated in silos, creating friction at integration points and limiting the agility of the DTC fulfilment operation.</p>
+              <p class="proj-text">The goal was to migrate the entire DTC order flow to IBM Sterling as a unified platform — replacing the legacy systems incrementally while keeping live operations running. This was a high-stakes implementation for a premium retail brand where order fulfilment accuracy and customer experience were non-negotiable.</p>
+            </div>
+
+            <div class="proj-section fade-in">
+              <h2 class="proj-section-title">The Problem</h2>
+              <div class="problem-grid">
+                <div class="problem-card">
+                  <div class="problem-icon" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 20V10"/><path d="M12 20V4"/><path d="M6 20v-6"/></svg>
+                  </div>
+                  <h3>Fragmented legacy systems</h3>
+                  <p>PKMS, RMS, and DTCMO each handled parts of the DTC order lifecycle but required manual intervention at handoff points, creating operational overhead and error risk.</p>
+                </div>
+                <div class="problem-card">
+                  <div class="problem-icon" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                  </div>
+                  <h3>Integration brittleness</h3>
+                  <p>Interfaces between legacy systems were custom-built and fragile — changes to one system frequently caused failures in connected systems, increasing maintenance cost and risk.</p>
+                </div>
+                <div class="problem-card">
+                  <div class="problem-icon" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                  </div>
+                  <h3>Limited fulfilment flexibility</h3>
+                  <p>The existing architecture couldn't easily support new fulfilment models — the rigidity of the legacy systems blocked the business from implementing capabilities like ship-from-store.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="proj-section fade-in">
+              <h2 class="proj-section-title">Solution &amp; Architecture</h2>
+              <p class="proj-text">The migration was executed as a phased Sterling implementation — progressively moving DTC order flows from the legacy systems onto Sterling while maintaining parallel operation to protect live transactions. Custom interfaces and APIs were developed to bridge Sterling with existing systems during the transition, with each phase retiring another legacy component as Sterling capabilities went live.</p>
+              <div class="arch-flow">
+                <div class="arch-step">
+                  <span class="arch-step-num">1</span>
+                  <div>
+                    <strong>Current State Mapping</strong>
+                    <p>Existing PKMS, RMS, and DTCMO workflows documented and mapped to equivalent Sterling components</p>
+                  </div>
+                </div>
+                <div class="arch-arrow" aria-hidden="true">→</div>
+                <div class="arch-step">
+                  <span class="arch-step-num">2</span>
+                  <div>
+                    <strong>Interface Development</strong>
+                    <p>Custom Sterling interfaces and APIs developed to integrate with legacy systems during parallel run periods</p>
+                  </div>
+                </div>
+                <div class="arch-arrow" aria-hidden="true">→</div>
+                <div class="arch-step">
+                  <span class="arch-step-num">3</span>
+                  <div>
+                    <strong>Phased Sterling Rollout</strong>
+                    <p>DTC order flows migrated to Sterling in phases, with each phase validated before retiring legacy system components</p>
+                  </div>
+                </div>
+                <div class="arch-arrow" aria-hidden="true">→</div>
+                <div class="arch-step">
+                  <span class="arch-step-num">4</span>
+                  <div>
+                    <strong>Legacy Decommission</strong>
+                    <p>Legacy systems progressively retired as Sterling capabilities were validated in production</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="proj-section fade-in">
+              <h2 class="proj-section-title">Key Features</h2>
+              <ul class="feature-list">
+                <li class="feature-item">
+                  <span class="feature-dot" aria-hidden="true"></span>
+                  <div><strong>Unified DTC order management</strong> — single Sterling platform replacing three legacy systems, providing a consistent order lifecycle view across the entire DTC operation</div>
+                </li>
+                <li class="feature-item">
+                  <span class="feature-dot" aria-hidden="true"></span>
+                  <div><strong>Legacy system bridge interfaces</strong> — custom-developed interfaces maintaining integration with PKMS, RMS, and DTCMO during the parallel-run transition period without disrupting live operations</div>
+                </li>
+                <li class="feature-item">
+                  <span class="feature-dot" aria-hidden="true"></span>
+                  <div><strong>Custom API development</strong> — bespoke Sterling Java APIs configured to meet Williams Sonoma's specific DTC order flow requirements beyond out-of-the-box functionality</div>
+                </li>
+                <li class="feature-item">
+                  <span class="feature-dot" aria-hidden="true"></span>
+                  <div><strong>Phased rollout with rollback safety</strong> — each migration phase designed with rollback capability, ensuring that live DTC operations could revert to the legacy system if validation failed</div>
+                </li>
+                <li class="feature-item">
+                  <span class="feature-dot" aria-hidden="true"></span>
+                  <div><strong>Agile production support model</strong> — daily monitoring, incident management, and enhancement activities maintained throughout the migration to ensure zero degradation in customer-facing order fulfilment</div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="proj-section fade-in">
+              <h2 class="proj-section-title">Impact &amp; Outcomes</h2>
+              <p class="proj-text">The phased migration successfully moved Williams Sonoma's DTC order flow onto IBM Sterling without disrupting live customer fulfilment operations. The replacement of three fragmented legacy systems with a unified Sterling platform reduced the integration maintenance burden and provided the architectural foundation for future DTC capabilities.</p>
+              <p class="proj-text">Managing this implementation — maintaining agile production support while executing a complex migration in parallel — required careful coordination between the client's operations team, the development team, and the Sterling platform capabilities. It was a formative project in understanding how to manage complex technical transitions without sacrificing operational stability.</p>
+            </div>
+
+            <div class="proj-section fade-in">
+              <h2 class="proj-section-title">Lessons Learned</h2>
+              <ul class="feature-list">
+                <li class="feature-item">
+                  <span class="feature-dot" aria-hidden="true"></span>
+                  <div><strong>Parallel running is the safest migration strategy</strong> — running Sterling alongside the legacy systems before cutting over, rather than doing a hard cutover, prevented the catastrophic failure modes that a big-bang migration would have risked for a live retail operation.</div>
+                </li>
+                <li class="feature-item">
+                  <span class="feature-dot" aria-hidden="true"></span>
+                  <div><strong>Undocumented legacy behaviour is the hidden risk in every migration</strong> — legacy systems accumulate undocumented business rules over years of patching. Discovering these mid-migration caused more delays than any technical challenge. Shadow-running early in the process to expose these gaps would have helped significantly.</div>
+                </li>
+                <li class="feature-item">
+                  <span class="feature-dot" aria-hidden="true"></span>
+                  <div><strong>The transition interfaces are temporary but must be treated as production quality</strong> — the bridge APIs connecting Sterling to legacy systems during parallel running were scoped as temporary, but they ran live operations. Cutting corners on their quality or testing would have put the migration at risk.</div>
+                </li>
+                <li class="feature-item">
+                  <span class="feature-dot" aria-hidden="true"></span>
+                  <div><strong>Agile ceremonies maintain rhythm during complex migrations</strong> — the daily standup and sprint cadence were what kept the team aligned when the scope and technical landscape were shifting constantly. Process discipline was the anchor in an otherwise ambiguous environment.</div>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+
+          <aside class="proj-sidebar fade-in" aria-label="Project details">
+            <div class="sidebar-card">
+              <h3 class="sidebar-title">Tech Stack</h3>
+              <ul class="sidebar-tags">
+                <li class="skill-tag accent-tag">IBM Sterling OMS</li>
+                <li class="skill-tag accent-tag">Legacy Migration</li>
+                <li class="skill-tag accent-tag">DTC Fulfilment</li>
+                <li class="skill-tag">Java / Java APIs</li>
+                <li class="skill-tag">System Integration</li>
+                <li class="skill-tag">PKMS / RMS</li>
+              </ul>
+            </div>
+            <div class="sidebar-card">
+              <h3 class="sidebar-title">My Role</h3>
+              <p class="sidebar-text">Associate / Team Lead — led agile production support, managed incident and enhancement activities, developed Sterling interfaces and APIs, and coordinated phased migration execution with the client's operations team.</p>
+            </div>
+            <div class="sidebar-card">
+              <h3 class="sidebar-title">Company</h3>
+              <p class="sidebar-text">Cognizant Technology Solutions · 2014–2015 · Client: Williams Sonoma</p>
+            </div>
+            <div class="sidebar-card">
+              <h3 class="sidebar-title">Other Work Projects</h3>
+              <a href="work-5.html" class="sidebar-proj-link">
+                <span class="sidebar-proj-num">05</span>
+                <span>Staples.com OMS</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+              <a href="work-6.html" class="sidebar-proj-link">
+                <span class="sidebar-proj-num">06</span>
+                <span>Kohls Global Inventory Visibility</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+              <a href="work-4.html" class="sidebar-proj-link">
+                <span class="sidebar-proj-num">04</span>
+                <span>Airline Home Delivery Platform</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <p>&copy; 2025 Projjal Dhar &middot; Dublin, Ireland</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

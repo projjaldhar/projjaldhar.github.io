@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AI/ML Driver & Vehicle Mapping — Work project by Projjal Dhar">
+  <title>AI/ML Driver & Vehicle Mapping — Projjal Dhar</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="project.css">
+</head>
+<body>
+  <nav class="nav scrolled" id="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo" aria-label="Home">PD</a>
+      <ul class="nav-links">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#work">Work</a></li>
+        <li><a href="index.html#projects">&lt;/DEV&gt;</a></li>
+        <li><a href="index.html#skills">Skills</a></li>
+        <li><a href="index.html#experience">Experience</a></li>
+        <li><a href="index.html#contact" class="nav-cta">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <section class="proj-hero">
+      <div class="container">
+        <a href="index.html#work" class="back-link fade-in" aria-label="Back to work projects">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+          All Work
+        </a>
+        <div class="proj-hero-content">
+          <div class="proj-hero-left fade-in">
+            <div class="proj-number" aria-hidden="true">Verizon Connect · 2022–2024</div>
+            <h1 class="proj-title">AI/ML Driver &amp;<br><span class="accent">Vehicle Mapping</span></h1>
+            <p class="proj-subtitle">An AI/ML system that automatically maps drivers to vehicles using behavioural patterns and historical trip data — eliminating the manual assignment overhead that consumed fleet operators daily.</p>
+            <div class="proj-tags">
+              <span class="tag">Machine Learning</span>
+              <span class="tag">Fleet Intelligence</span>
+              <span class="tag">Predictive Analytics</span>
+              <span class="tag">Automation</span>
+            </div>
+          </div>
+          <div class="proj-hero-right fade-in">
+            <div class="proj-stat-grid">
+              <div class="proj-stat">
+                <span class="proj-stat-num">90%</span>
+                <span class="proj-stat-label">Prediction accuracy</span>
+              </div>
+              <div class="proj-stat">
+                <span class="proj-stat-num">Automated</span>
+                <span class="proj-stat-label">Driver-vehicle assignment</span>
+              </div>
+              <div class="proj-stat">
+                <span class="proj-stat-num">0</span>
+                <span class="proj-stat-label">Manual assignments for mapped fleets</span>
+              </div>
+              <div class="proj-stat">
+                <span class="proj-stat-num">Live</span>
+                <span class="proj-stat-label">In production at Verizon Connect</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="proj-body">
+      <div class="container">
+        <div class="proj-layout">
+          <div class="proj-main">
+
+            <div class="proj-section fade-in">
+              <h2 class="proj-section-title">Overview</h2>
+              <p class="proj-text">Fleet operators managing dozens or hundreds of vehicles face a daily problem: correctly assigning which driver is using which vehicle. Without accurate mapping, telematics data becomes unreliable — hours of service logs, driver behaviour scores, and compliance reports all depend on knowing who was behind the wheel.</p>
+              <p class="proj-text">This project delivered an AI/ML system that learns driver-vehicle patterns from historical trip data and automatically assigns the most probable driver to each vehicle at the start of every trip — achieving 90% prediction accuracy and removing the need for manual assignment across targeted fleets.</p>
+            </div>
+
+            <div class="proj-section fade-in">
+              <h2 class="proj-section-title">The Problem</h2>
+              <div class="problem-grid">
+                <div class="problem-card">
+                  <div class="problem-icon" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                  </div>
+                  <h3>Manual assignment is error-prone</h3>
+                  <p>Operators manually logging driver-vehicle pairings introduced frequent errors, corrupting downstream compliance and behaviour reports.</p>
+                </div>
+                <div class="problem-card">
+                  <div class="problem-icon" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                  </div>
+                  <h3>Daily operational overhead</h3>
+                  <p>Fleet managers spent significant time each morning assigning drivers — time that should go to managing exceptions, not routine data entry.</p>
+                </div>
+                <div class="problem-card">
+                  <div class="problem-icon" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+                  </div>
+                  <h3>Unreliable telematics data</h3>
+                  <p>Misattributed trips skewed driver behaviour scores, invalidated HOS logs, and undermined the trust operators placed in the platform.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="proj-section fade-in">
+              <h2 class="proj-section-title">Solution &amp; Architecture</h2>
+              <p class="proj-text">The system analyses historical trip patterns — time of day, start location, route signature, and vehicle preferences — to build a probabilistic model per driver. At the moment a trip begins, the model scores each known driver against the current trip context and assigns the highest-confidence match, with a fallback to manual assignment when confidence is below threshold.</p>
+              <div class="arch-flow">
+                <div class="arch-step">
+                  <span class="arch-step-num">1</span>
+                  <div>
+                    <strong>Historical Data Ingestion</strong>
+                    <p>Trip records, confirmed assignments, and driver schedules feed the training pipeline</p>
+                  </div>
+                </div>
+                <div class="arch-arrow" aria-hidden="true">→</div>
+                <div class="arch-step">
+                  <span class="arch-step-num">2</span>
+                  <div>
+                    <strong>Pattern Modelling</strong>
+                    <p>ML model learns driver-specific signatures: timing, location, route, and vehicle preferences</p>
+                  </div>
+                </div>
+                <div class="arch-arrow" aria-hidden="true">→</div>
+                <div class="arch-step">
+                  <span class="arch-step-num">3</span>
+                  <div>
+                    <strong>Real-time Prediction</strong>
+                    <p>At trip start, model scores candidate drivers and assigns the highest-confidence match</p>
+                  </div>
+                </div>
+                <div class="arch-arrow" aria-hidden="true">→</div>
+                <div class="arch-step">
+                  <span class="arch-step-num">4</span>
+                  <div>
+                    <strong>Feedback Loop</strong>
+                    <p>Operator corrections feed back into the model, continuously improving accuracy over time</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="proj-section fade-in">
+              <h2 class="proj-section-title">Key Features</h2>
+              <ul class="feature-list">
+                <li class="feature-item">
+                  <span class="feature-dot" aria-hidden="true"></span>
+                  <div><strong>Automatic trip assignment</strong> — drivers mapped to vehicles at trip start without any manual input required from fleet operators</div>
+                </li>
+                <li class="feature-item">
+                  <span class="feature-dot" aria-hidden="true"></span>
+                  <div><strong>Confidence scoring</strong> — every prediction includes a confidence score; low-confidence trips are flagged for manual review rather than silently misassigned</div>
+                </li>
+                <li class="feature-item">
+                  <span class="feature-dot" aria-hidden="true"></span>
+                  <div><strong>Manual override with learning</strong> — operators can correct any assignment, and each correction strengthens the model for that driver-vehicle context</div>
+                </li>
+                <li class="feature-item">
+                  <span class="feature-dot" aria-hidden="true"></span>
+                  <div><strong>Fleet-level accuracy dashboard</strong> — operators can see prediction accuracy trends, correction rates, and model confidence distribution across their fleet</div>
+                </li>
+                <li class="feature-item">
+                  <span class="feature-dot" aria-hidden="true"></span>
+                  <div><strong>Graceful degradation</strong> — when a driver is new or has insufficient history, the system surfaces manual assignment prompts rather than making a low-quality prediction</div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="proj-section fade-in">
+              <h2 class="proj-section-title">Impact &amp; Outcomes</h2>
+              <p class="proj-text">The system reached 90% prediction accuracy across targeted fleet types within the initial rollout period, dramatically reducing the volume of manual assignments fleet operators needed to make each day. For large fleets, this translated to hours of recovered operator time per week and a significant improvement in the reliability of downstream telematics reports.</p>
+              <p class="proj-text">The product approach — starting with high-confidence fleet segments and expanding gradually — was key to building operator trust. By showing accurate predictions before asking operators to rely on them fully, adoption was significantly smoother than a big-bang rollout would have been.</p>
+            </div>
+
+            <div class="proj-section fade-in">
+              <h2 class="proj-section-title">Lessons Learned</h2>
+              <ul class="feature-list">
+                <li class="feature-item">
+                  <span class="feature-dot" aria-hidden="true"></span>
+                  <div><strong>Data quality upstream is the real constraint</strong> — the model was only as good as the historical assignment data it trained on. Investing in data cleaning and validation before model training saved significant rework downstream.</div>
+                </li>
+                <li class="feature-item">
+                  <span class="feature-dot" aria-hidden="true"></span>
+                  <div><strong>Explainability matters as much as accuracy</strong> — fleet managers wanted to understand why a driver was assigned, not just that the model said so. Adding simple reasoning text ("assigned based on usual morning route") dramatically improved trust and adoption.</div>
+                </li>
+                <li class="feature-item">
+                  <span class="feature-dot" aria-hidden="true"></span>
+                  <div><strong>Gradual rollout beats big-bang deployment</strong> — starting with high-confidence predictions only and expanding the automation threshold over time gave operators a chance to build confidence in the system before fully relying on it.</div>
+                </li>
+                <li class="feature-item">
+                  <span class="feature-dot" aria-hidden="true"></span>
+                  <div><strong>The feedback loop is the product's long-term moat</strong> — every correction makes the model better for that fleet. Operators who engaged with the feedback UI saw faster accuracy improvements, making the feedback mechanism a retention driver, not just a quality tool.</div>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+
+          <aside class="proj-sidebar fade-in" aria-label="Project details">
+            <div class="sidebar-card">
+              <h3 class="sidebar-title">Tech Stack</h3>
+              <ul class="sidebar-tags">
+                <li class="skill-tag accent-tag">Machine Learning</li>
+                <li class="skill-tag accent-tag">Predictive Analytics</li>
+                <li class="skill-tag accent-tag">Fleet Telematics</li>
+                <li class="skill-tag">Behavioural Modelling</li>
+                <li class="skill-tag">Real-time Processing</li>
+                <li class="skill-tag">Data Pipelines</li>
+              </ul>
+            </div>
+            <div class="sidebar-card">
+              <h3 class="sidebar-title">My Role</h3>
+              <p class="sidebar-text">Product Owner — led discovery with fleet operators, defined the prediction confidence framework, owned the accuracy metric and rollout strategy, and drove iterative improvements based on operator correction data.</p>
+            </div>
+            <div class="sidebar-card">
+              <h3 class="sidebar-title">Company</h3>
+              <p class="sidebar-text">Verizon Connect · Dublin, Ireland · 2022–2024</p>
+            </div>
+            <div class="sidebar-card">
+              <h3 class="sidebar-title">Other Work Projects</h3>
+              <a href="work-2.html" class="sidebar-proj-link">
+                <span class="sidebar-proj-num">02</span>
+                <span>EV Suitability Tool</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+              <a href="work-3.html" class="sidebar-proj-link">
+                <span class="sidebar-proj-num">03</span>
+                <span>CARB / SMOG Fleet Compliance</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+              <a href="work-7.html" class="sidebar-proj-link">
+                <span class="sidebar-proj-num">07</span>
+                <span>CPRA Privacy Portal</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <p>&copy; 2025 Projjal Dhar &middot; Dublin, Ireland</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

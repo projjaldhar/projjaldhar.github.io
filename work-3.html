@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CARB / SMOG Fleet Compliance — Work project by Projjal Dhar">
+  <title>CARB / SMOG Fleet Compliance — Projjal Dhar</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="project.css">
+</head>
+<body>
+  <nav class="nav scrolled" id="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo" aria-label="Home">PD</a>
+      <ul class="nav-links">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#work">Work</a></li>
+        <li><a href="index.html#projects">&lt;/DEV&gt;</a></li>
+        <li><a href="index.html#skills">Skills</a></li>
+        <li><a href="index.html#experience">Experience</a></li>
+        <li><a href="index.html#contact" class="nav-cta">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <section class="proj-hero">
+      <div class="container">
+        <a href="index.html#work" class="back-link fade-in" aria-label="Back to work projects">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+          All Work
+        </a>
+        <div class="proj-hero-content">
+          <div class="proj-hero-left fade-in">
+            <div class="proj-number" aria-hidden="true">Verizon Connect · 2022–2023</div>
+            <h1 class="proj-title">CARB / SMOG<br><span class="accent">Fleet Compliance</span></h1>
+            <p class="proj-subtitle">Compliance features that enable California fleet operators to meet SMOG and CARB emissions regulations — delivered to California Bureau of Automotive Repair certification and unlocking a regulated fleet market segment.</p>
+            <div class="proj-tags">
+              <span class="tag">Regulatory Compliance</span>
+              <span class="tag">Fleet Management</span>
+              <span class="tag">Enterprise</span>
+              <span class="tag">California BAR</span>
+            </div>
+          </div>
+          <div class="proj-hero-right fade-in">
+            <div class="proj-stat-grid">
+              <div class="proj-stat">
+                <span class="proj-stat-num">BAR</span>
+                <span class="proj-stat-label">California certified</span>
+              </div>
+              <div class="proj-stat">
+                <span class="proj-stat-num">CARB</span>
+                <span class="proj-stat-label">Compliant reporting</span>
+              </div>
+              <div class="proj-stat">
+                <span class="proj-stat-num">New</span>
+                <span class="proj-stat-label">Regulated fleet market unlocked</span>
+              </div>
+              <div class="proj-stat">
+                <span class="proj-stat-num">Live</span>
+                <span class="proj-stat-label">In production at Verizon Connect</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="proj-body">
+      <div class="container">
+        <div class="proj-layout">
+          <div class="proj-main">
+
+            <div class="proj-section fade-in">
+              <h2 class="proj-section-title">Overview</h2>
+              <p class="proj-text">California's fleet emissions regulations are among the strictest in the world. Fleet operators subject to SMOG check requirements and CARB standards face significant fines for non-compliance — and until this project, Verizon Connect had no features to help them manage that exposure.</p>
+              <p class="proj-text">This project delivered a full set of compliance monitoring and reporting features, and guided Verizon Connect through the California Bureau of Automotive Repair certification process — unlocking the ability to serve regulated fleets in the California market and providing a defensible compliance workflow for customers already operating there.</p>
+            </div>
+
+            <div class="proj-section fade-in">
+              <h2 class="proj-section-title">The Problem</h2>
+              <div class="problem-grid">
+                <div class="problem-card">
+                  <div class="problem-icon" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                  </div>
+                  <h3>No compliance tracking</h3>
+                  <p>Fleet operators had no way to track SMOG check due dates or CARB compliance status within the platform — managing it manually in spreadsheets.</p>
+                </div>
+                <div class="problem-card">
+                  <div class="problem-icon" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                  </div>
+                  <h3>Risk of non-compliance fines</h3>
+                  <p>Missed SMOG deadlines exposed fleet operators to significant regulatory penalties with no early-warning system in place.</p>
+                </div>
+                <div class="problem-card">
+                  <div class="problem-icon" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6M9 12h6M9 15h4"/></svg>
+                  </div>
+                  <h3>Blocked from regulated fleet segment</h3>
+                  <p>Without BAR certification, Verizon Connect could not serve California fleets operating under the strictest regulatory tiers, limiting market reach.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="proj-section fade-in">
+              <h2 class="proj-section-title">Solution &amp; Architecture</h2>
+              <p class="proj-text">The solution combined a compliance monitoring layer within the platform with a structured certification programme to achieve BAR approval. Vehicle SMOG due dates are tracked and surfaced proactively; CARB compliance status is reported at fleet level with audit-ready exports for regulatory submissions.</p>
+              <div class="arch-flow">
+                <div class="arch-step">
+                  <span class="arch-step-num">1</span>
+                  <div>
+                    <strong>Compliance Ingestion</strong>
+                    <p>Vehicle registration, SMOG due dates, and CARB status data integrated into the platform</p>
+                  </div>
+                </div>
+                <div class="arch-arrow" aria-hidden="true">→</div>
+                <div class="arch-step">
+                  <span class="arch-step-num">2</span>
+                  <div>
+                    <strong>Status Monitoring</strong>
+                    <p>Continuous tracking of compliance deadlines with automated alerts as due dates approach</p>
+                  </div>
+                </div>
+                <div class="arch-arrow" aria-hidden="true">→</div>
+                <div class="arch-step">
+                  <span class="arch-step-num">3</span>
+                  <div>
+                    <strong>Reporting &amp; Audit Trail</strong>
+                    <p>CARB-compliant report generation and exportable compliance history for regulatory submissions</p>
+                  </div>
+                </div>
+                <div class="arch-arrow" aria-hidden="true">→</div>
+                <div class="arch-step">
+                  <span class="arch-step-num">4</span>
+                  <div>
+                    <strong>BAR Certification</strong>
+                    <p>Platform and workflows guided through California Bureau of Automotive Repair review and certification</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="proj-section fade-in">
+              <h2 class="proj-section-title">Key Features</h2>
+              <ul class="feature-list">
+                <li class="feature-item">
+                  <span class="feature-dot" aria-hidden="true"></span>
+                  <div><strong>SMOG due date tracking</strong> — per-vehicle compliance calendar with configurable alert thresholds, ensuring operators are notified well before deadlines rather than after</div>
+                </li>
+                <li class="feature-item">
+                  <span class="feature-dot" aria-hidden="true"></span>
+                  <div><strong>CARB status dashboard</strong> — fleet-level and per-vehicle view of CARB compliance status with colour-coded risk indicators</div>
+                </li>
+                <li class="feature-item">
+                  <span class="feature-dot" aria-hidden="true"></span>
+                  <div><strong>Audit-ready reporting</strong> — one-click compliance reports formatted to California regulatory standards, reducing manual effort during audits and inspections</div>
+                </li>
+                <li class="feature-item">
+                  <span class="feature-dot" aria-hidden="true"></span>
+                  <div><strong>Automated compliance alerts</strong> — configurable notifications at 60/30/7 day thresholds before SMOG deadlines, sent to both fleet managers and designated compliance contacts</div>
+                </li>
+                <li class="feature-item">
+                  <span class="feature-dot" aria-hidden="true"></span>
+                  <div><strong>BAR-certified workflow</strong> — the complete reporting and data workflow received California Bureau of Automotive Repair certification, giving customers a defensible compliance process</div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="proj-section fade-in">
+              <h2 class="proj-section-title">Impact &amp; Outcomes</h2>
+              <p class="proj-text">Achieving California BAR certification unlocked a segment of regulated fleet operators that Verizon Connect could not previously serve. Existing California customers gained a compliance workflow that reduced their regulatory exposure and eliminated the spreadsheet-based tracking that had been their only alternative.</p>
+              <p class="proj-text">The project also strengthened Verizon Connect's regulatory credentials more broadly — demonstrating that the platform could meet government certification standards, which opened conversations with other regulated fleet segments beyond California.</p>
+            </div>
+
+            <div class="proj-section fade-in">
+              <h2 class="proj-section-title">Lessons Learned</h2>
+              <ul class="feature-list">
+                <li class="feature-item">
+                  <span class="feature-dot" aria-hidden="true"></span>
+                  <div><strong>Regulatory certification timelines are not negotiable</strong> — the BAR certification process had fixed review cycles that couldn't be accelerated. Building this into the roadmap early, with buffer time, was critical to hitting the market window.</div>
+                </li>
+                <li class="feature-item">
+                  <span class="feature-dot" aria-hidden="true"></span>
+                  <div><strong>Compliance buyers are risk-averse by design</strong> — fleet compliance managers needed to see that the workflow was defensible in a regulatory audit, not just functional. Framing features in terms of audit-readiness rather than convenience accelerated buying decisions.</div>
+                </li>
+                <li class="feature-item">
+                  <span class="feature-dot" aria-hidden="true"></span>
+                  <div><strong>Early regulator engagement pays dividends</strong> — involving the BAR review team early in the design process — sharing wireframes and workflow logic before build — avoided rework at the certification stage.</div>
+                </li>
+                <li class="feature-item">
+                  <span class="feature-dot" aria-hidden="true"></span>
+                  <div><strong>Documentation is the product for compliance features</strong> — the audit-ready export and compliance history trail were ultimately more valued than the UI. Investing in report format and data fidelity from the start was the right priority.</div>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+
+          <aside class="proj-sidebar fade-in" aria-label="Project details">
+            <div class="sidebar-card">
+              <h3 class="sidebar-title">Tech Stack</h3>
+              <ul class="sidebar-tags">
+                <li class="skill-tag accent-tag">Compliance Monitoring</li>
+                <li class="skill-tag accent-tag">Regulatory Reporting</li>
+                <li class="skill-tag accent-tag">Fleet Telematics</li>
+                <li class="skill-tag">Alert Systems</li>
+                <li class="skill-tag">Audit Workflows</li>
+                <li class="skill-tag">Data Export</li>
+              </ul>
+            </div>
+            <div class="sidebar-card">
+              <h3 class="sidebar-title">My Role</h3>
+              <p class="sidebar-text">Product Owner — led regulatory discovery with California fleet operators, defined the compliance workflow, managed the BAR certification submission process, and owned the go-to-market for the regulated fleet segment.</p>
+            </div>
+            <div class="sidebar-card">
+              <h3 class="sidebar-title">Company</h3>
+              <p class="sidebar-text">Verizon Connect · Dublin, Ireland · 2022–2023</p>
+            </div>
+            <div class="sidebar-card">
+              <h3 class="sidebar-title">Other Work Projects</h3>
+              <a href="work-1.html" class="sidebar-proj-link">
+                <span class="sidebar-proj-num">01</span>
+                <span>AI/ML Driver &amp; Vehicle Mapping</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+              <a href="work-2.html" class="sidebar-proj-link">
+                <span class="sidebar-proj-num">02</span>
+                <span>EV Suitability Tool</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+              <a href="work-7.html" class="sidebar-proj-link">
+                <span class="sidebar-proj-num">07</span>
+                <span>CPRA Privacy Portal</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <p>&copy; 2025 Projjal Dhar &middot; Dublin, Ireland</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

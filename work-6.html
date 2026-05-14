@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kohls Global Inventory Visibility — Work project by Projjal Dhar">
+  <title>Kohls Global Inventory Visibility — Projjal Dhar</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="project.css">
+</head>
+<body>
+  <nav class="nav scrolled" id="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo" aria-label="Home">PD</a>
+      <ul class="nav-links">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#work">Work</a></li>
+        <li><a href="index.html#projects">&lt;/DEV&gt;</a></li>
+        <li><a href="index.html#skills">Skills</a></li>
+        <li><a href="index.html#experience">Experience</a></li>
+        <li><a href="index.html#contact" class="nav-cta">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <section class="proj-hero">
+      <div class="container">
+        <a href="index.html#work" class="back-link fade-in" aria-label="Back to work projects">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+          All Work
+        </a>
+        <div class="proj-hero-content">
+          <div class="proj-hero-left fade-in">
+            <div class="proj-number" aria-hidden="true">IBM / Cognizant · 2011–2013</div>
+            <h1 class="proj-title">Kohls Global<br><span class="accent">Inventory Visibility</span></h1>
+            <p class="proj-subtitle">IBM Sterling GIV implementation for Kohls — delivering real-time, unified inventory data across the enterprise, replacing siloed systems with a single source of truth for stock levels and availability.</p>
+            <div class="proj-tags">
+              <span class="tag">IBM Sterling GIV</span>
+              <span class="tag">Inventory Management</span>
+              <span class="tag">Retail</span>
+              <span class="tag">Enterprise</span>
+            </div>
+          </div>
+          <div class="proj-hero-right fade-in">
+            <div class="proj-stat-grid">
+              <div class="proj-stat">
+                <span class="proj-stat-num">Global</span>
+                <span class="proj-stat-label">Inventory visibility achieved</span>
+              </div>
+              <div class="proj-stat">
+                <span class="proj-stat-num">Real-time</span>
+                <span class="proj-stat-label">Stock data across enterprise</span>
+              </div>
+              <div class="proj-stat">
+                <span class="proj-stat-num">5-person</span>
+                <span class="proj-stat-label">Development team led</span>
+              </div>
+              <div class="proj-stat">
+                <span class="proj-stat-num">Kohls</span>
+                <span class="proj-stat-label">Major US department store chain</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="proj-body">
+      <div class="container">
+        <div class="proj-layout">
+          <div class="proj-main">
+
+            <div class="proj-section fade-in">
+              <h2 class="proj-section-title">Overview</h2>
+              <p class="proj-text">Kohls operated one of the largest department store networks in the US, with inventory spread across hundreds of stores, distribution centres, and e-commerce fulfilment nodes. Without a unified inventory visibility layer, stock decisions were being made on stale or incomplete data — leading to overselling, missed fulfilment opportunities, and inefficient stock transfers between locations.</p>
+              <p class="proj-text">This project implemented IBM Sterling's Global Inventory Visibility model to provide Kohls with a real-time, enterprise-wide view of inventory — enabling accurate availability calculations, smarter fulfilment routing, and eliminating the blind spots in their existing inventory management infrastructure.</p>
+            </div>
+
+            <div class="proj-section fade-in">
+              <h2 class="proj-section-title">The Problem</h2>
+              <div class="problem-grid">
+                <div class="problem-card">
+                  <div class="problem-icon" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+                  </div>
+                  <h3>Siloed inventory systems</h3>
+                  <p>Store, DC, and e-commerce inventory lived in separate systems with no unified view, making enterprise-wide stock decisions unreliable.</p>
+                </div>
+                <div class="problem-card">
+                  <div class="problem-icon" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                  </div>
+                  <h3>Stale availability data</h3>
+                  <p>Batch-updated inventory feeds created windows of inaccuracy that led to overselling online and missed ship-from-store opportunities.</p>
+                </div>
+                <div class="problem-card">
+                  <div class="problem-icon" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+                  </div>
+                  <h3>Inefficient fulfilment routing</h3>
+                  <p>Without real-time cross-node visibility, orders were frequently routed to suboptimal fulfilment locations, increasing cost and delivery time.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="proj-section fade-in">
+              <h2 class="proj-section-title">Solution &amp; Architecture</h2>
+              <p class="proj-text">IBM Sterling's GIV model was implemented to aggregate inventory data across all nodes — stores, DCs, and online fulfilment centres — into a single, real-time visibility layer. The implementation included interface configuration to connect existing inventory systems, API integration for real-time stock queries, and the configuration layer that enabled availability calculations to draw from the unified data store.</p>
+              <div class="arch-flow">
+                <div class="arch-step">
+                  <span class="arch-step-num">1</span>
+                  <div>
+                    <strong>Requirement Gathering</strong>
+                    <p>Inventory flows, system interfaces, and business rules documented from Kohls stakeholders</p>
+                  </div>
+                </div>
+                <div class="arch-arrow" aria-hidden="true">→</div>
+                <div class="arch-step">
+                  <span class="arch-step-num">2</span>
+                  <div>
+                    <strong>Interface Configuration</strong>
+                    <p>Sterling GIV interfaces configured to ingest inventory updates from store, DC, and e-commerce systems</p>
+                  </div>
+                </div>
+                <div class="arch-arrow" aria-hidden="true">→</div>
+                <div class="arch-step">
+                  <span class="arch-step-num">3</span>
+                  <div>
+                    <strong>API Integration</strong>
+                    <p>Java API layer built to expose real-time inventory queries to downstream OMS and e-commerce platforms</p>
+                  </div>
+                </div>
+                <div class="arch-arrow" aria-hidden="true">→</div>
+                <div class="arch-step">
+                  <span class="arch-step-num">4</span>
+                  <div>
+                    <strong>Validation &amp; Go-live</strong>
+                    <p>Phased validation against existing inventory data, followed by phased production rollout</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="proj-section fade-in">
+              <h2 class="proj-section-title">Key Features</h2>
+              <ul class="feature-list">
+                <li class="feature-item">
+                  <span class="feature-dot" aria-hidden="true"></span>
+                  <div><strong>Unified inventory view</strong> — real-time aggregation of stock levels across all Kohls nodes into a single queryable data layer</div>
+                </li>
+                <li class="feature-item">
+                  <span class="feature-dot" aria-hidden="true"></span>
+                  <div><strong>Multi-system interface integration</strong> — configured Sterling GIV interfaces to receive inventory updates from existing store, DC, and e-commerce systems without requiring those systems to be replaced</div>
+                </li>
+                <li class="feature-item">
+                  <span class="feature-dot" aria-hidden="true"></span>
+                  <div><strong>Real-time availability API</strong> — Java API layer exposing live inventory availability for downstream availability calculations and fulfilment routing decisions</div>
+                </li>
+                <li class="feature-item">
+                  <span class="feature-dot" aria-hidden="true"></span>
+                  <div><strong>Availability reservation logic</strong> — soft reservation capability to prevent overselling during the window between availability check and order confirmation</div>
+                </li>
+                <li class="feature-item">
+                  <span class="feature-dot" aria-hidden="true"></span>
+                  <div><strong>Full design documentation</strong> — High Level Design and Detailed Level Design documents produced, providing Kohls with a durable architectural record of the implementation</div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="proj-section fade-in">
+              <h2 class="proj-section-title">Impact &amp; Outcomes</h2>
+              <p class="proj-text">The GIV implementation gave Kohls a real-time, enterprise-wide inventory visibility layer that had not previously existed. This provided the data foundation for more accurate availability promises to customers online, smarter fulfilment routing decisions, and the elimination of the overselling incidents that had been occurring due to stale stock data.</p>
+              <p class="proj-text">Leading a team of five developers through this implementation was my first experience in a technical lead role, giving me a foundation in stakeholder management, design documentation, and delivery accountability that I carried directly into product management.</p>
+            </div>
+
+            <div class="proj-section fade-in">
+              <h2 class="proj-section-title">Lessons Learned</h2>
+              <ul class="feature-list">
+                <li class="feature-item">
+                  <span class="feature-dot" aria-hidden="true"></span>
+                  <div><strong>Data quality from source systems is the foundation everything else depends on</strong> — GIV was only as accurate as the inventory feeds coming into it. Investing time upfront in validating source system data quality before building on it prevented downstream accuracy issues.</div>
+                </li>
+                <li class="feature-item">
+                  <span class="feature-dot" aria-hidden="true"></span>
+                  <div><strong>Incremental validation beats big-bang testing</strong> — validating inventory accuracy node by node before aggregating gave the team confidence and caught interface issues early, rather than discovering them during a full-scale integration test.</div>
+                </li>
+                <li class="feature-item">
+                  <span class="feature-dot" aria-hidden="true"></span>
+                  <div><strong>Leading a team requires explicit communication, not assumption</strong> — my first time managing five developers taught me that what's obvious to the lead is often unclear to the team. Daily stand-ups and written design summaries made alignment visible rather than assumed.</div>
+                </li>
+                <li class="feature-item">
+                  <span class="feature-dot" aria-hidden="true"></span>
+                  <div><strong>The business problem is always more important than technical elegance</strong> — early in the project I spent time on technically sophisticated interface patterns that the client neither needed nor valued. Learning to solve the business problem with the minimum necessary complexity was the most lasting lesson from this engagement.</div>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+
+          <aside class="proj-sidebar fade-in" aria-label="Project details">
+            <div class="sidebar-card">
+              <h3 class="sidebar-title">Tech Stack</h3>
+              <ul class="sidebar-tags">
+                <li class="skill-tag accent-tag">IBM Sterling GIV</li>
+                <li class="skill-tag accent-tag">Inventory Management</li>
+                <li class="skill-tag accent-tag">Java APIs</li>
+                <li class="skill-tag">XML / XSD</li>
+                <li class="skill-tag">Interface Configuration</li>
+                <li class="skill-tag">SQL</li>
+              </ul>
+            </div>
+            <div class="sidebar-card">
+              <h3 class="sidebar-title">My Role</h3>
+              <p class="sidebar-text">Programmer Analyst & Team Lead — led requirement gathering, produced HLD and DLD, configured GIV interfaces and APIs, and managed a team of 5 software developers through the implementation.</p>
+            </div>
+            <div class="sidebar-card">
+              <h3 class="sidebar-title">Company</h3>
+              <p class="sidebar-text">Cognizant Technology Solutions · 2011–2013 · Client: Kohls</p>
+            </div>
+            <div class="sidebar-card">
+              <h3 class="sidebar-title">Other Work Projects</h3>
+              <a href="work-5.html" class="sidebar-proj-link">
+                <span class="sidebar-proj-num">05</span>
+                <span>Staples.com OMS</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+              <a href="work-8.html" class="sidebar-proj-link">
+                <span class="sidebar-proj-num">08</span>
+                <span>Williams Sonoma OMS</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+              <a href="work-4.html" class="sidebar-proj-link">
+                <span class="sidebar-proj-num">04</span>
+                <span>Airline Home Delivery Platform</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <p>&copy; 2025 Projjal Dhar &middot; Dublin, Ireland</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
