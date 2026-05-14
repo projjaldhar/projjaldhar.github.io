@@ -265,12 +265,10 @@ img { max-width: 100%; display: block; }
   gap: 20px;
 }
 
-/* In Short card */
+/* In Short — no card, plain content */
 .in-short-card {
-  border: 1px solid var(--border);
-  border-radius: var(--radius-lg);
-  padding: 24px;
-  background: var(--bg);
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--border);
 }
 .in-short-label {
   display: block;
@@ -288,12 +286,9 @@ img { max-width: 100%; display: block; }
   line-height: 1.75;
 }
 
-/* Tools I rely on */
+/* Tools I rely on — no card, plain content */
 .hero-tools {
-  border: 1px solid var(--border);
-  border-radius: var(--radius-lg);
-  padding: 24px;
-  background: var(--bg);
+  padding-top: 4px;
 }
 .hero-tools-label {
   display: block;
@@ -306,7 +301,7 @@ img { max-width: 100%; display: block; }
   margin-bottom: 8px;
 }
 .hero-tools-sub {
-  font-size: 0.82rem;
+  font-size: 0.85rem;
   color: var(--text-3);
   line-height: 1.6;
   margin-bottom: 20px;
@@ -323,24 +318,23 @@ img { max-width: 100%; display: block; }
   gap: 6px;
 }
 .tool-logo-wrap {
-  width: 48px;
-  height: 48px;
-  border: 1px solid var(--border);
+  width: 44px;
+  height: 44px;
   border-radius: var(--radius);
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--bg);
-  transition: border-color var(--t), box-shadow var(--t);
+  background: var(--bg-muted);
+  transition: background var(--t), transform var(--t);
   overflow: hidden;
 }
-.tool-logo-wrap:hover {
-  border-color: var(--border-med);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+.hero-tool-item:hover .tool-logo-wrap {
+  background: #e8eaed;
+  transform: translateY(-2px);
 }
-.tool-logo-wrap img { width: 28px; height: 28px; object-fit: contain; }
+.tool-logo-wrap img { width: 26px; height: 26px; object-fit: contain; }
 .hero-tool-item span {
-  font-size: 0.62rem;
+  font-size: 0.6rem;
   color: var(--text-3);
   font-family: var(--font-mono);
   text-align: center;
