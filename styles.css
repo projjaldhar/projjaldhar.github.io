@@ -1111,12 +1111,14 @@ a.project-card:hover .project-cta { gap: 10px; }
    ============================================================ */
 .fade-in {
   opacity: 0;
-  transform: translateY(14px);
-  transition: opacity 0.5s ease, transform 0.5s ease;
+  transform: translateY(32px) scale(0.98);
+  transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+              transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: transform, opacity;
 }
 .fade-in.visible {
   opacity: 1;
-  transform: translateY(0);
+  transform: translateY(0) scale(1);
 }
 .hero-left > .fade-in:nth-child(1) { transition-delay: 0.04s; }
 .hero-left > .fade-in:nth-child(2) { transition-delay: 0.10s; }

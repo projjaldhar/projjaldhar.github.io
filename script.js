@@ -10,23 +10,38 @@ window.addEventListener('scroll', () => {
 }, { passive: true });
 
 /* ============================================================
-   FADE-IN — Intersection Observer
+   FADE-IN — Staggered Intersection Observer
    ============================================================ */
-const fadeEls = document.querySelectorAll('.fade-in');
+const triggered = new WeakSet();
+
+const reveal = (el, delay = 0) => {
+  if (triggered.has(el)) return;
+  triggered.add(el);
+  observer.unobserve(el);
+  setTimeout(() => el.classList.add('visible'), delay);
+};
 
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('visible');
-      observer.unobserve(entry.target); // fire once
+    if (!entry.isIntersecting || triggered.has(entry.target)) return;
+    const el = entry.target;
+
+    // Collect untriggered siblings to stagger together
+    const siblings = [...el.parentElement.querySelectorAll(':scope > .fade-in')]
+      .filter(s => !triggered.has(s));
+
+    if (siblings.length > 1) {
+      siblings.forEach((s, i) => reveal(s, i * 90));
+    } else {
+      reveal(el);
     }
   });
 }, {
-  threshold: 0.1,
-  rootMargin: '0px 0px -40px 0px'
+  threshold: 0.06,
+  rootMargin: '0px 0px -20px 0px'
 });
 
-fadeEls.forEach(el => observer.observe(el));
+document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 
 /* ============================================================
    SMOOTH SCROLL — internal anchor links
