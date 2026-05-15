@@ -12,13 +12,47 @@ window.addEventListener('scroll', () => {
 /* ============================================================
    FADE-IN — Staggered Intersection Observer
    ============================================================ */
+
+// Word-by-word reveal for elements with data-words attribute
+function wrapWords(html) {
+  // Wrap each word token (non-whitespace, non-tag) in a .word-reveal span
+  return html.replace(/(<[^>]+>)|([^\s<]+)/g, (match, tag, word) => {
+    if (tag) return tag; // preserve HTML tags unchanged
+    return `<span class="word-reveal">${word}</span>`;
+  });
+}
+
+function revealWords(el) {
+  // Cancel the standard fade-in transform so element is immediately visible as a container
+  el.style.opacity = '1';
+  el.style.transform = 'none';
+  el.style.transition = 'none';
+
+  el.innerHTML = wrapWords(el.innerHTML);
+  const words = el.querySelectorAll('.word-reveal');
+
+  // Double rAF: let browser paint the hidden-word state, then animate
+  requestAnimationFrame(() => requestAnimationFrame(() => {
+    words.forEach((word, i) => {
+      word.style.transitionDelay = `${i * 38}ms`;
+      word.classList.add('visible');
+    });
+  }));
+}
+
 const triggered = new WeakSet();
 
 const reveal = (el, delay = 0) => {
   if (triggered.has(el)) return;
   triggered.add(el);
   observer.unobserve(el);
-  setTimeout(() => el.classList.add('visible'), delay);
+  setTimeout(() => {
+    if ('words' in el.dataset) {
+      revealWords(el);
+    } else {
+      el.classList.add('visible');
+    }
+  }, delay);
 };
 
 const observer = new IntersectionObserver((entries) => {
