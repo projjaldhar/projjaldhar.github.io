@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Advanced Prompt Engineering Techniques — Projjal Dhar">
+  <title>Advanced Prompt Engineering Techniques — Projjal Dhar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="writing.css">
+</head>
+<body>
+  <nav class="nav scrolled" id="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo" aria-label="Home">projjal.dhar</a>
+      <ul class="nav-links">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#work">Work</a></li>
+        <li><a href="index.html#experience">Experience</a></li>
+        <li><a href="index.html#certifications">Certs</a></li>
+        <li><a href="index.html#writing">Writing</a></li>
+        <li><a href="index.html#contact" class="nav-cta">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <section class="writing-hero">
+      <div class="container">
+        <a href="index.html#certifications" class="back-link fade-in">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+          All Certifications
+        </a>
+        <div class="writing-hero-content fade-in">
+          <div class="writing-meta-row">
+            <span class="writing-category">AI &amp; LLMs</span>
+            <span class="writing-dot" aria-hidden="true">·</span>
+            <span class="writing-read-time">Professional Certification</span>
+          </div>
+          <h1 class="writing-title">Advanced Prompt Engineering Techniques</h1>
+          <p class="writing-subtitle">A professional certification covering systematic approaches to prompt design for large language models — including chain-of-thought reasoning, few-shot learning, retrieval augmentation, and prompt evaluation frameworks.</p>
+        </div>
+      </div>
+    </section>
+
+    <article class="writing-body">
+      <div class="container">
+        <div class="writing-content fade-in">
+
+          <p>Prompt engineering has moved from a novelty to a core skill for anyone building products with language models. The Advanced Prompt Engineering Techniques certification moves beyond the basics — "be specific, give examples" — into the systematic methods that determine whether an LLM-based feature is reliable enough to ship to production users.</p>
+
+          <h2>Techniques Covered</h2>
+
+          <p><strong>Chain-of-thought prompting</strong> — structuring prompts so that the model reasons step by step before producing an answer. This consistently improves performance on tasks requiring multi-step logic, and also makes the model's reasoning inspectable — critical when you need to understand why a model produced a specific output in a fleet analytics or compliance context.</p>
+
+          <p><strong>Few-shot and zero-shot learning</strong> — how the number and quality of examples in a prompt affects model behaviour; when carefully chosen examples outperform detailed instructions; and how to construct example sets that generalise to the actual distribution of inputs the product will see in production.</p>
+
+          <p><strong>System prompt design</strong> — structuring the system context that shapes model behaviour across a conversation: role assignment, constraint specification, output format control, and persona consistency. In products where the LLM response is customer-facing, getting this right is the difference between a trustworthy product experience and an unpredictable one.</p>
+
+          <p><strong>Retrieval-augmented generation (RAG)</strong> — combining LLM generation with a retrieval step over a document corpus or database. Understanding RAG architecture — embedding models, vector stores, retrieval strategies, and context window management — is essential for products that need the model to reason over proprietary or up-to-date information rather than its training data alone.</p>
+
+          <p><strong>Prompt evaluation and testing</strong> — building evaluation frameworks to assess prompt quality systematically: automated scoring with LLM judges, human evaluation rubrics, regression testing when prompts change, and how to measure the trade-off between precision, recall, and coherence in generated outputs.</p>
+
+          <h2>Why This Matters for Product</h2>
+
+          <p>The gap between a prompt that works in a demo and a prompt that works reliably across thousands of real user inputs is where most AI product failures happen. Understanding these techniques changes how I write AI feature specifications: instead of "use GPT to summarise the trip data," I write requirements that specify evaluation criteria, edge case handling, and fallback behaviour when the model is uncertain.</p>
+
+          <p>Building the fleet AI assistant during the Curious PM cohort made this concrete. The difference between a useful product and an unreliable one came down to how well the prompts were engineered — and how rigorously the outputs were evaluated before we showed them to users.</p>
+
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <p>&copy; 2025 Projjal Dhar &middot; Dublin, Ireland</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
