@@ -257,6 +257,20 @@ img { max-width: 100%; display: block; }
 .hero-quote-text,
 .hero-quote-author { display: none; }
 
+/* In Short inside hero-right — left-aligned, scaled to column */
+.hero-right .in-short-inner {
+  text-align: left;
+  margin: 0;
+  max-width: none;
+}
+.hero-right .in-short-label {
+  text-align: left;
+  margin-bottom: 20px;
+}
+.hero-right .in-short-headline {
+  font-size: clamp(1.6rem, 3vw, 2.6rem);
+}
+
 /* ============================================================
    LAYOUT HELPERS
    ============================================================ */
