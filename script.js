@@ -1,12 +1,12 @@
 'use strict';
 
 /* ============================================================
-   TOPBAR — add scrolled class after 60px
+   NAV — add scrolled class after 60px
    ============================================================ */
-const topbar = document.getElementById('topbar');
+const nav = document.getElementById('nav');
 
 window.addEventListener('scroll', () => {
-  if (topbar) topbar.classList.toggle('scrolled', window.scrollY > 60);
+  if (nav) nav.classList.toggle('scrolled', window.scrollY > 60);
 }, { passive: true });
 
 /* ============================================================
