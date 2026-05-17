@@ -194,6 +194,28 @@ if (quoteEl && authorEl) {
   setInterval(cycleQuote, 5000);
 }
 
+/* ============================================================
+   IN SHORT — cycle through phrases with fade transition
+   ============================================================ */
+const inShortPhrases = [
+  `Currently leading AI/ML, EV, and compliance features in the <span class="in-short-script">Verizon Connect Reveal</span> fleet platform`,
+  `10+ years shipping B2B SaaS and OMS products across <span class="in-short-script">Verizon, Retail inMotion</span>, and IBM`,
+  `Discovery, ideation, and roadmap — connecting <span class="in-short-script">user research</span> to engineering execution`,
+];
+
+const inShortEl = document.getElementById('inShortText');
+if (inShortEl) {
+  let inShortIdx = 0;
+  setInterval(() => {
+    inShortEl.classList.add('cycling-out');
+    setTimeout(() => {
+      inShortIdx = (inShortIdx + 1) % inShortPhrases.length;
+      inShortEl.innerHTML = inShortPhrases[inShortIdx];
+      inShortEl.classList.remove('cycling-out');
+    }, 500);
+  }, 3500);
+}
+
 // Handle nav </DEV> link click
 document.querySelectorAll('a[href="#projects"]').forEach(link => {
   link.addEventListener('click', () => {
