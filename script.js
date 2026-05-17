@@ -1,35 +1,6 @@
 'use strict';
 
 /* ============================================================
-   NAV — add scrolled class after 60px
-   ============================================================ */
-const nav = document.getElementById('nav');
-
-window.addEventListener('scroll', () => {
-  if (nav) nav.classList.toggle('scrolled', window.scrollY > 60);
-}, { passive: true });
-
-/* ============================================================
-   LIVE CLOCK — Dublin time
-   ============================================================ */
-const clockEl = document.getElementById('liveClock');
-if (clockEl) {
-  const fmt = new Intl.DateTimeFormat('en-IE', {
-    timeZone: 'Europe/Dublin',
-    weekday: 'short',
-    hour: '2-digit',
-    minute: '2-digit',
-    second: '2-digit',
-    hour12: false,
-  });
-  function updateClock() {
-    clockEl.textContent = fmt.format(new Date()) + ' · Dublin';
-  }
-  updateClock();
-  setInterval(updateClock, 1000);
-}
-
-/* ============================================================
    FADE-IN — Staggered Intersection Observer
    ============================================================ */
 
