@@ -205,13 +205,24 @@ const inShortPhrases = [
 
 const inShortEl = document.getElementById('inShortText');
 if (inShortEl) {
+  inShortEl.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
   let inShortIdx = 0;
+
   setInterval(() => {
-    inShortEl.classList.add('cycling-out');
+    // Fade out
+    inShortEl.style.opacity = '0';
+    inShortEl.style.transform = 'translateY(10px)';
+
     setTimeout(() => {
+      // Swap content while invisible
       inShortIdx = (inShortIdx + 1) % inShortPhrases.length;
       inShortEl.innerHTML = inShortPhrases[inShortIdx];
-      inShortEl.classList.remove('cycling-out');
+
+      // Double rAF ensures browser paints the hidden state before fading in
+      requestAnimationFrame(() => requestAnimationFrame(() => {
+        inShortEl.style.opacity = '1';
+        inShortEl.style.transform = 'translateY(0)';
+      }));
     }, 500);
   }, 3500);
 }
