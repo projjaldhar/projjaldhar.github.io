@@ -7,39 +7,74 @@
   <title>Projjal Dhar — Product Owner & AI Innovator</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300&family=Varela+Round&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <!-- Header -->
-  <header class="header" id="hero" aria-label="Introduction">
-    <div class="header-blur" aria-hidden="true"></div>
-    <div class="header-avatar fade-in" aria-hidden="true">PD</div>
-    <div class="fade-in">
-      <div class="header-top">
-        <div>
-          <h1 class="header-name">Projjal Dhar</h1>
-          <p class="header-role">Senior Product Owner | 10+ Years in Product, OMS &amp; B2B SaaS</p>
+  <!-- Nav -->
+  <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">projjal.dhar</a>
+      <div class="nav-right">
+        <ul class="nav-links" role="list">
+          <li><a href="#work">Work</a></li>
+          <li><a href="#projects">Dev</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="Projjal_Dhar_Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
+        </ul>
+        <span class="nav-badge" aria-label="Open to new roles">
+          <span class="nav-badge-dot" aria-hidden="true"></span>
+          Open to Roles
+        </span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="hero" aria-label="Introduction">
+    <div class="hero-inner">
+      <p class="hero-tag fade-in">👋 Hey there, I'm Projjal!</p>
+      <h1 class="hero-heading fade-in">
+        <span class="hero-heading-static">Growth-Driven</span>
+        <span class="hero-heading-animated" id="heroAnimated">Product Owner.</span>
+      </h1>
+      <p class="hero-sub fade-in">I build products that ship. 10+ years leading fleet intelligence, OMS platforms, and AI features across Verizon, Retail inMotion, and IBM — from user research through to delivery.</p>
+      <div class="hero-actions fade-in">
+        <a href="#work" class="btn-primary">View My Work</a>
+        <a href="Projjal_Dhar_Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn-outline">Download Resume</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="stats-section" aria-label="Key metrics">
+    <div class="stats-inner">
+      <div class="stats-grid">
+        <div class="stat-item fade-in">
+          <div class="stat-num-large" data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="1" data-purecounter-suffix="+">10+</div>
+          <p class="stat-label-large">Years of experience in Product, OMS &amp; B2B SaaS</p>
         </div>
-        <div class="header-ctas">
-          <a href="https://www.linkedin.com/in/projjaldhar" target="_blank" rel="noopener noreferrer" class="btn-linkedin" aria-label="LinkedIn profile">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-          </a>
-          <a href="mailto:projjal.dhar@gmail.com" class="btn-chat">Let's Chat</a>
+        <div class="stat-item fade-in">
+          <div class="stat-num-large" data-purecounter-start="0" data-purecounter-end="90" data-purecounter-duration="1" data-purecounter-suffix="%">90%</div>
+          <p class="stat-label-large">AI/ML prediction accuracy on driver-vehicle mapping</p>
+        </div>
+        <div class="stat-item fade-in">
+          <div class="stat-num-large" data-purecounter-start="0" data-purecounter-end="8" data-purecounter-duration="1" data-purecounter-suffix="+">8+</div>
+          <p class="stat-label-large">Enterprise products shipped across 3 companies</p>
         </div>
       </div>
-      <p class="header-intro">I'm a <span class="hl">Senior Product Owner</span> at <span class="hl">Verizon Connect</span> in Dublin with 10+ years of experience building <span class="hl">B2B SaaS</span> products. Currently leading <span class="hl">AI/ML</span>, EV suitability, and compliance features across the <span class="hl">fleet management</span> platform — from discovery and user research through to roadmap and delivery.</p>
+      <p class="stats-quote">"Discovery, ideation, and roadmap — connecting user research to engineering execution to drive outcomes at scale."</p>
     </div>
-  </header>
+  </section>
 
   <!-- Projects Section (tabbed: Work + DEV) -->
   <section class="section" id="work" aria-label="Projects">
-    <div class="section-blur" aria-hidden="true"></div>
     <div class="container">
       <div class="section-header fade-in">
-        <span class="section-label">Work</span>
-        <p class="section-title">Products and features I've led at Verizon Connect, Retail inMotion, and IBM — from discovery through to delivery.</p>
+        <span class="section-label">Featured Work</span>
+        <h2 class="section-heading">Design Solutions</h2>
+        <p class="section-sub">Products and features I've led at Verizon Connect, Retail inMotion, and IBM — from discovery through to delivery.</p>
       </div>
       <div class="tab-nav fade-in" role="tablist" aria-label="Project categories">
         <button class="tab-btn active" data-tab="work" role="tab" aria-selected="true" aria-controls="tab-work">
@@ -52,204 +87,92 @@
       <div id="tab-work" class="tab-panel" role="tabpanel">
       <div class="projects-grid">
 
-        <a href="work-1.html" class="project-card fade-in" aria-label="View AI/ML Driver Mapping project details">
-          <div class="work-card-header">
-            <div class="project-number" aria-hidden="true">01</div>
-            <span class="work-company-badge">Verizon Connect</span>
+        <a href="work-1.html" class="project-card fade-in" aria-label="AI/ML Driver Mapping">
+          <div class="project-thumb"><span class="project-thumb-num">01</span><span class="project-thumb-badge">Verizon Connect</span></div>
+          <div class="project-body">
+            <h3 class="project-title">AI/ML Driver &amp; Vehicle Mapping</h3>
+            <p class="project-desc">An AI/ML system that automatically maps drivers to vehicles using behavioural patterns and historical trip data — eliminating manual assignment for fleet operators at scale.</p>
+            <div class="work-outcome"><span class="work-outcome-stat">90%</span><div class="work-outcome-divider"></div><span class="work-outcome-text">Prediction accuracy — eliminated manual assignment overhead</span></div>
+            <div class="project-tags"><span class="tag">Machine Learning</span><span class="tag">Fleet Intelligence</span><span class="tag">Predictive Analytics</span></div>
+            <span class="project-cta">View Case Study →</span>
           </div>
-          <div class="project-icon" aria-hidden="true">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/>
-            </svg>
-          </div>
-          <h3 class="project-title">AI/ML Driver &amp; Vehicle Mapping</h3>
-          <p class="project-desc">Led product development of an AI/ML system that automatically maps drivers to vehicles based on behavioural patterns and historical trip data, eliminating hours of manual fleet assignment for operators at scale.</p>
-          <div class="work-outcome">
-            <span class="work-outcome-stat">90%</span>
-            <div class="work-outcome-divider"></div>
-            <span class="work-outcome-text">Prediction accuracy — eliminated manual assignment overhead</span>
-          </div>
-          <div class="project-tags" aria-label="Technologies used">
-            <span class="tag">Machine Learning</span>
-            <span class="tag">Fleet Intelligence</span>
-            <span class="tag">Predictive Analytics</span>
-          </div>
-          <span class="project-cta" aria-hidden="true">→ View details</span>
         </a>
 
-        <a href="work-2.html" class="project-card fade-in" aria-label="View EV Suitability Tool project details">
-          <div class="work-card-header">
-            <div class="project-number" aria-hidden="true">02</div>
-            <span class="work-company-badge">Verizon Connect</span>
+        <a href="work-2.html" class="project-card fade-in" aria-label="EV Suitability Tool">
+          <div class="project-thumb"><span class="project-thumb-num">02</span><span class="project-thumb-badge">Verizon Connect</span></div>
+          <div class="project-body">
+            <h3 class="project-title">EV Suitability Tool</h3>
+            <p class="project-desc">Analytics tool helping fleet managers identify viable EV candidates using real mileage, route, and dwell-time data — modelling transition economics and reducing range-anxiety guesswork.</p>
+            <div class="work-outcome"><span class="work-outcome-stat">+15 DAU</span><div class="work-outcome-divider"></div><span class="work-outcome-text">2024 autoXreport Innovator Award winner</span></div>
+            <div class="project-tags"><span class="tag">Fleet Analytics</span><span class="tag">EV Strategy</span><span class="tag">Data Modelling</span></div>
+            <span class="project-cta">View Case Study →</span>
           </div>
-          <div class="project-icon" aria-hidden="true">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
-            </svg>
-          </div>
-          <h3 class="project-title">EV Suitability Tool</h3>
-          <p class="project-desc">Conceived and shipped an analytics tool helping fleet managers identify which vehicles are viable EV candidates, using real mileage, route, and dwell-time data to model transition economics and reduce range-anxiety guesswork.</p>
-          <div class="work-outcome">
-            <span class="work-outcome-stat">+15 DAU</span>
-            <div class="work-outcome-divider"></div>
-            <span class="work-outcome-text">2024 autoXreport Innovator Award winner</span>
-          </div>
-          <div class="project-tags" aria-label="Technologies used">
-            <span class="tag">Fleet Analytics</span>
-            <span class="tag">EV Strategy</span>
-            <span class="tag">Data Modelling</span>
-          </div>
-          <span class="project-cta" aria-hidden="true">→ View details</span>
         </a>
 
-        <a href="work-3.html" class="project-card fade-in" aria-label="View CARB/SMOG Compliance project details">
-          <div class="work-card-header">
-            <div class="project-number" aria-hidden="true">03</div>
-            <span class="work-company-badge">Verizon Connect</span>
+        <a href="work-3.html" class="project-card fade-in" aria-label="CARB/SMOG Compliance">
+          <div class="project-thumb"><span class="project-thumb-num">03</span><span class="project-thumb-badge">Verizon Connect</span></div>
+          <div class="project-body">
+            <h3 class="project-title">CARB / SMOG Fleet Compliance</h3>
+            <p class="project-desc">Compliance features enabling California fleet operators to meet SMOG and CARB emissions regulations — guiding the product through Bureau of Automotive Repair certification.</p>
+            <div class="work-outcome"><span class="work-outcome-stat">BAR Certified</span><div class="work-outcome-divider"></div><span class="work-outcome-text">Unlocked regulated fleet market in California</span></div>
+            <div class="project-tags"><span class="tag">Regulatory Compliance</span><span class="tag">Fleet Management</span><span class="tag">Enterprise</span></div>
+            <span class="project-cta">View Case Study →</span>
           </div>
-          <div class="project-icon" aria-hidden="true">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-            </svg>
-          </div>
-          <h3 class="project-title">CARB / SMOG Fleet Compliance</h3>
-          <p class="project-desc">Defined and delivered compliance features enabling California fleet operators to meet SMOG and CARB emissions regulations, guiding the product through the California Bureau of Automotive Repair certification process.</p>
-          <div class="work-outcome">
-            <span class="work-outcome-stat">BAR Certified</span>
-            <div class="work-outcome-divider"></div>
-            <span class="work-outcome-text">Unlocked regulated fleet market in California</span>
-          </div>
-          <div class="project-tags" aria-label="Technologies used">
-            <span class="tag">Regulatory Compliance</span>
-            <span class="tag">Fleet Management</span>
-            <span class="tag">Enterprise</span>
-          </div>
-          <span class="project-cta" aria-hidden="true">→ View details</span>
         </a>
 
-        <a href="work-4.html" class="project-card fade-in" aria-label="View Airline Home Delivery project details">
-          <div class="work-card-header">
-            <div class="project-number" aria-hidden="true">04</div>
-            <span class="work-company-badge">Retail inMotion</span>
+        <a href="work-4.html" class="project-card fade-in" aria-label="Airline Home Delivery Platform">
+          <div class="project-thumb"><span class="project-thumb-num">04</span><span class="project-thumb-badge">Retail inMotion</span></div>
+          <div class="project-body">
+            <h3 class="project-title">Airline Home Delivery Platform</h3>
+            <p class="project-desc">End-to-end product for onboard home delivery across multiple airline clients — order placement, fulfilment routing, crew workflows, and post-flight last-mile delivery integrations.</p>
+            <div class="work-outcome"><span class="work-outcome-stat">Multi-airline</span><div class="work-outcome-divider"></div><span class="work-outcome-text">Rolled out across European carrier network</span></div>
+            <div class="project-tags"><span class="tag">E-commerce</span><span class="tag">OMS</span><span class="tag">Airline Retail</span></div>
+            <span class="project-cta">View Case Study →</span>
           </div>
-          <div class="project-icon" aria-hidden="true">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M5 12H3l9-9 9 9h-2"/><path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-7"/><path d="M9 21v-6a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v6"/>
-            </svg>
-          </div>
-          <h3 class="project-title">Airline Home Delivery Platform</h3>
-          <p class="project-desc">Owned the end-to-end product for onboard home delivery across multiple airline clients — designing order placement, fulfilment routing, crew workflows, and post-flight last-mile delivery integrations from the ground up.</p>
-          <div class="work-outcome">
-            <span class="work-outcome-stat">Multi-airline</span>
-            <div class="work-outcome-divider"></div>
-            <span class="work-outcome-text">Rolled out across European carrier network</span>
-          </div>
-          <div class="project-tags" aria-label="Technologies used">
-            <span class="tag">E-commerce</span>
-            <span class="tag">OMS</span>
-            <span class="tag">Airline Retail</span>
-          </div>
-          <span class="project-cta" aria-hidden="true">→ View details</span>
         </a>
 
-        <a href="work-5.html" class="project-card fade-in" aria-label="View Staples OMS project details">
-          <div class="work-card-header">
-            <div class="project-number" aria-hidden="true">05</div>
-            <span class="work-company-badge">IBM / Infosys</span>
+        <a href="work-5.html" class="project-card fade-in" aria-label="Staples OMS">
+          <div class="project-thumb"><span class="project-thumb-num">05</span><span class="project-thumb-badge">IBM / Infosys</span></div>
+          <div class="project-body">
+            <h3 class="project-title">Staples.com Order Management System</h3>
+            <p class="project-desc">IBM Sterling OMS implementation for Staples.com covering YOMS and OFL-LCA components — PO creation, supply collaboration, transfer orders for the NAD Strategic Business Unit.</p>
+            <div class="work-outcome"><span class="work-outcome-stat">Enterprise</span><div class="work-outcome-divider"></div><span class="work-outcome-text">Order management for one of the US's largest retailers</span></div>
+            <div class="project-tags"><span class="tag">IBM Sterling OMS</span><span class="tag">Supply Chain</span><span class="tag">Java</span></div>
+            <span class="project-cta">View Case Study →</span>
           </div>
-          <div class="project-icon" aria-hidden="true">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/>
-            </svg>
-          </div>
-          <h3 class="project-title">Staples.com Order Management System</h3>
-          <p class="project-desc">Implemented the IBM Sterling OMS for Staples.com covering YOMS and OFL-LCA components — PO creation and management, supply collaboration, transfer orders, and removal orders for the NAD Strategic Business Unit.</p>
-          <div class="work-outcome">
-            <span class="work-outcome-stat">Enterprise</span>
-            <div class="work-outcome-divider"></div>
-            <span class="work-outcome-text">Order management for one of the US's largest retailers</span>
-          </div>
-          <div class="project-tags" aria-label="Technologies used">
-            <span class="tag">IBM Sterling OMS</span>
-            <span class="tag">Supply Chain</span>
-            <span class="tag">Java</span>
-          </div>
-          <span class="project-cta" aria-hidden="true">→ View details</span>
         </a>
 
-        <a href="work-6.html" class="project-card fade-in" aria-label="View Kohls GIV project details">
-          <div class="work-card-header">
-            <div class="project-number" aria-hidden="true">06</div>
-            <span class="work-company-badge">IBM / Cognizant</span>
+        <a href="work-6.html" class="project-card fade-in" aria-label="Kohls GIV">
+          <div class="project-thumb"><span class="project-thumb-num">06</span><span class="project-thumb-badge">IBM / Cognizant</span></div>
+          <div class="project-body">
+            <h3 class="project-title">Kohls Global Inventory Visibility</h3>
+            <p class="project-desc">IBM Sterling GIV model implementation for Kohls — delivering real-time inventory data across the enterprise with requirement gathering, design documentation, and a team of 5 developers.</p>
+            <div class="work-outcome"><span class="work-outcome-stat">Global</span><div class="work-outcome-divider"></div><span class="work-outcome-text">Real-time inventory visibility across Kohls enterprise</span></div>
+            <div class="project-tags"><span class="tag">IBM Sterling GIV</span><span class="tag">Inventory Management</span><span class="tag">Retail</span></div>
+            <span class="project-cta">View Case Study →</span>
           </div>
-          <div class="project-icon" aria-hidden="true">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-              <ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
-            </svg>
-          </div>
-          <h3 class="project-title">Kohls Global Inventory Visibility</h3>
-          <p class="project-desc">Implemented the IBM Sterling Global Inventory Visibility model for Kohls, delivering real-time inventory data across the enterprise. Led requirement gathering, high-level and detailed design documentation, and a team of 5 developers.</p>
-          <div class="work-outcome">
-            <span class="work-outcome-stat">Global</span>
-            <div class="work-outcome-divider"></div>
-            <span class="work-outcome-text">Real-time inventory visibility across Kohls enterprise</span>
-          </div>
-          <div class="project-tags" aria-label="Technologies used">
-            <span class="tag">IBM Sterling GIV</span>
-            <span class="tag">Inventory Management</span>
-            <span class="tag">Retail</span>
-          </div>
-          <span class="project-cta" aria-hidden="true">→ View details</span>
         </a>
 
-        <a href="work-7.html" class="project-card fade-in" aria-label="View CPRA Privacy Portal project details">
-          <div class="work-card-header">
-            <div class="project-number" aria-hidden="true">07</div>
-            <span class="work-company-badge">Verizon Connect</span>
+        <a href="work-7.html" class="project-card fade-in" aria-label="CPRA Privacy Portal">
+          <div class="project-thumb"><span class="project-thumb-num">07</span><span class="project-thumb-badge">Verizon Connect</span></div>
+          <div class="project-body">
+            <h3 class="project-title">CPRA Privacy Portal &amp; Notification Panel</h3>
+            <p class="project-desc">CPRA-compliant privacy portal and notification panel giving fleet operators control over data consent preferences while maintaining engagement through consent-aware communications.</p>
+            <div class="work-outcome"><span class="work-outcome-stat">+8.3%</span><div class="work-outcome-divider"></div><span class="work-outcome-text">Monthly engagement lift post-launch</span></div>
+            <div class="project-tags"><span class="tag">Privacy / CPRA</span><span class="tag">Compliance</span><span class="tag">User Engagement</span></div>
+            <span class="project-cta">View Case Study →</span>
           </div>
-          <div class="project-icon" aria-hidden="true">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/>
-            </svg>
-          </div>
-          <h3 class="project-title">CPRA Privacy Portal &amp; Notification Panel</h3>
-          <p class="project-desc">Led the product development of a CPRA-compliant privacy portal and user notification panel, giving fleet operators control over data consent preferences while maintaining engagement through targeted, consent-aware communications.</p>
-          <div class="work-outcome">
-            <span class="work-outcome-stat">+8.3%</span>
-            <div class="work-outcome-divider"></div>
-            <span class="work-outcome-text">Monthly engagement lift post-launch</span>
-          </div>
-          <div class="project-tags" aria-label="Technologies used">
-            <span class="tag">Privacy / CPRA</span>
-            <span class="tag">Compliance</span>
-            <span class="tag">User Engagement</span>
-          </div>
-          <span class="project-cta" aria-hidden="true">→ View details</span>
         </a>
 
-        <a href="work-8.html" class="project-card fade-in" aria-label="View Williams Sonoma OMS project details">
-          <div class="work-card-header">
-            <div class="project-number" aria-hidden="true">08</div>
-            <span class="work-company-badge">IBM / Cognizant</span>
+        <a href="work-8.html" class="project-card fade-in" aria-label="Williams Sonoma OMS">
+          <div class="project-thumb"><span class="project-thumb-num">08</span><span class="project-thumb-badge">IBM / Cognizant</span></div>
+          <div class="project-body">
+            <h3 class="project-title">Williams Sonoma Order Management System</h3>
+            <p class="project-desc">End-to-end Sterling OMS implementation for Williams Sonoma's DTC channel — migrating from PKMS, RMS, and DTCMO by phasing in Sterling fulfilment with custom API development.</p>
+            <div class="work-outcome"><span class="work-outcome-stat">End-to-end</span><div class="work-outcome-divider"></div><span class="work-outcome-text">Full Sterling migration for Williams Sonoma DTC</span></div>
+            <div class="project-tags"><span class="tag">IBM Sterling OMS</span><span class="tag">DTC Fulfilment</span><span class="tag">System Integration</span></div>
+            <span class="project-cta">View Case Study →</span>
           </div>
-          <div class="project-icon" aria-hidden="true">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/>
-            </svg>
-          </div>
-          <h3 class="project-title">Williams Sonoma Order Management System</h3>
-          <p class="project-desc">Led the end-to-end Sterling OMS implementation for Williams Sonoma's DTC channel — migrating order flow away from PKMS, RMS, and DTCMO by phasing in Sterling fulfilment capabilities, configuring interfaces, and developing custom APIs.</p>
-          <div class="work-outcome">
-            <span class="work-outcome-stat">End-to-end</span>
-            <div class="work-outcome-divider"></div>
-            <span class="work-outcome-text">Full Sterling migration for Williams Sonoma DTC</span>
-          </div>
-          <div class="project-tags" aria-label="Technologies used">
-            <span class="tag">IBM Sterling OMS</span>
-            <span class="tag">DTC Fulfilment</span>
-            <span class="tag">System Integration</span>
-          </div>
-          <span class="project-cta" aria-hidden="true">→ View details</span>
         </a>
 
       </div>
@@ -259,94 +182,93 @@
       <div class="projects-grid">
 
         <a href="project-1.html" class="project-card fade-in" aria-label="View AI Chatbot project details">
-          <div class="project-number" aria-hidden="true">01</div>
-          <div class="project-icon" aria-hidden="true">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
-            </svg>
+          <div class="project-thumb">
+            <span class="project-thumb-num">01</span>
+            <span class="project-thumb-badge">Side Project</span>
           </div>
-          <h3 class="project-title">AI Chatbot with Database Integration</h3>
-          <p class="project-desc">Developed an intelligent conversational AI system that connects to databases to provide real-time information and personalized responses, improving customer engagement.</p>
-          <div class="project-tags" aria-label="Technologies used">
-            <span class="tag">NLP</span>
-            <span class="tag">Database</span>
-            <span class="tag">Real-time</span>
-            <span class="tag">Engagement</span>
+          <div class="project-body">
+            <h3 class="project-title">AI Chatbot with Database Integration</h3>
+            <p class="project-desc">Developed an intelligent conversational AI system that connects to databases to provide real-time information and personalized responses, improving customer engagement.</p>
+            <div class="project-tags">
+              <span class="tag">NLP</span>
+              <span class="tag">Database</span>
+              <span class="tag">Real-time</span>
+              <span class="tag">Engagement</span>
+            </div>
+            <span class="project-cta">View Project →</span>
           </div>
-          <span class="project-cta" aria-hidden="true">→ View details</span>
         </a>
 
         <a href="project-2.html" class="project-card fade-in" aria-label="View AI Voice Assistant project details">
-          <div class="project-number" aria-hidden="true">02</div>
-          <div class="project-icon" aria-hidden="true">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2.18h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
-            </svg>
+          <div class="project-thumb">
+            <span class="project-thumb-num">02</span>
+            <span class="project-thumb-badge">Side Project</span>
           </div>
-          <h3 class="project-title">AI Voice Assistant with Phone Support</h3>
-          <p class="project-desc">Built a voice-activated AI assistant capable of handling phone-based customer support calls, reducing response time and handling routine inquiries autonomously.</p>
-          <div class="project-tags" aria-label="Technologies used">
-            <span class="tag">Voice AI</span>
-            <span class="tag">Telephony</span>
-            <span class="tag">Automation</span>
-            <span class="tag">Support</span>
+          <div class="project-body">
+            <h3 class="project-title">AI Voice Assistant with Phone Support</h3>
+            <p class="project-desc">Built a voice-activated AI assistant capable of handling phone-based customer support calls, reducing response time and handling routine inquiries autonomously.</p>
+            <div class="project-tags">
+              <span class="tag">Voice AI</span>
+              <span class="tag">Telephony</span>
+              <span class="tag">Automation</span>
+              <span class="tag">Support</span>
+            </div>
+            <span class="project-cta">View Project →</span>
           </div>
-          <span class="project-cta" aria-hidden="true">→ View details</span>
         </a>
 
         <a href="project-3.html" class="project-card fade-in" aria-label="View Autonomous AI Agent project details">
-          <div class="project-number" aria-hidden="true">03</div>
-          <div class="project-icon" aria-hidden="true">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
-            </svg>
+          <div class="project-thumb">
+            <span class="project-thumb-num">03</span>
+            <span class="project-thumb-badge">Side Project</span>
           </div>
-          <h3 class="project-title">Autonomous AI Agent for Job Search</h3>
-          <p class="project-desc">Created an intelligent job search agent that automatically finds, filters, and applies to relevant job opportunities based on user preferences and qualifications, increasing application efficiency.</p>
-          <div class="project-tags" aria-label="Technologies used">
-            <span class="tag">Agents</span>
-            <span class="tag">AI</span>
-            <span class="tag">Automation</span>
-            <span class="tag">Personalization</span>
+          <div class="project-body">
+            <h3 class="project-title">Autonomous AI Agent for Job Search</h3>
+            <p class="project-desc">Created an intelligent job search agent that automatically finds, filters, and applies to relevant job opportunities based on user preferences and qualifications, increasing application efficiency.</p>
+            <div class="project-tags">
+              <span class="tag">Agents</span>
+              <span class="tag">AI</span>
+              <span class="tag">Automation</span>
+              <span class="tag">Personalization</span>
+            </div>
+            <span class="project-cta">View Project →</span>
           </div>
-          <span class="project-cta" aria-hidden="true">→ View details</span>
         </a>
 
         <a href="project-4.html" class="project-card fade-in" aria-label="View StoryGlobe project details">
-          <div class="project-number" aria-hidden="true">04</div>
-          <div class="project-icon" aria-hidden="true">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
-            </svg>
+          <div class="project-thumb">
+            <span class="project-thumb-num">04</span>
+            <span class="project-thumb-badge">Side Project</span>
           </div>
-          <h3 class="project-title">StoryGlobe — 3D Gateway to Global Folklore</h3>
-          <p class="project-desc">An interactive 3D globe that lets you explore folk tales, oral traditions, and legendary stories from countries around the world. Tap any country flag to discover stories and authors from that culture.</p>
-          <div class="project-tags" aria-label="Technologies used">
-            <span class="tag">Three.js</span>
-            <span class="tag">React</span>
-            <span class="tag">Supabase</span>
-            <span class="tag">Mobile-first</span>
+          <div class="project-body">
+            <h3 class="project-title">StoryGlobe — 3D Gateway to Global Folklore</h3>
+            <p class="project-desc">An interactive 3D globe that lets you explore folk tales, oral traditions, and legendary stories from countries around the world. Tap any country flag to discover stories and authors from that culture.</p>
+            <div class="project-tags">
+              <span class="tag">Three.js</span>
+              <span class="tag">React</span>
+              <span class="tag">Supabase</span>
+              <span class="tag">Mobile-first</span>
+            </div>
+            <span class="project-cta">View Project →</span>
           </div>
-          <span class="project-cta" aria-hidden="true">→ View details</span>
         </a>
 
-
         <a href="project-5.html" class="project-card fade-in" aria-label="View Podcast RAG System project details">
-          <div class="project-number" aria-hidden="true">05</div>
-          <div class="project-icon" aria-hidden="true">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
-            </svg>
+          <div class="project-thumb">
+            <span class="project-thumb-num">05</span>
+            <span class="project-thumb-badge">Side Project</span>
           </div>
-          <h3 class="project-title">Podcast RAG System with Vector Search</h3>
-          <p class="project-desc">Built a production-grade RAG pipeline that transcribes podcast episodes, generates vector embeddings, stores them in Pinecone, and enables conversational Q&amp;A over the indexed content via a Streamlit interface.</p>
-          <div class="project-tags" aria-label="Technologies used">
-            <span class="tag">RAG</span>
-            <span class="tag">Pinecone</span>
-            <span class="tag">Deepgram</span>
-            <span class="tag">Streamlit</span>
+          <div class="project-body">
+            <h3 class="project-title">Podcast RAG System with Vector Search</h3>
+            <p class="project-desc">Built a production-grade RAG pipeline that transcribes podcast episodes, generates vector embeddings, stores them in Pinecone, and enables conversational Q&amp;A over the indexed content via a Streamlit interface.</p>
+            <div class="project-tags">
+              <span class="tag">RAG</span>
+              <span class="tag">Pinecone</span>
+              <span class="tag">Deepgram</span>
+              <span class="tag">Streamlit</span>
+            </div>
+            <span class="project-cta">View Project →</span>
           </div>
-          <span class="project-cta" aria-hidden="true">→ View details</span>
         </a>
 
       </div>
@@ -356,9 +278,8 @@
 
   <!-- Stack Section -->
   <section class="section stack-section" aria-label="Tools and stack">
-    <div class="section-blur" aria-hidden="true"></div>
     <div class="container">
-      <span class="section-label fade-in">Stack</span>
+      <span class="section-label fade-in">Stack &amp; Tools</span>
       <div class="stack-marquee-wrap fade-in" aria-hidden="true">
         <div class="stack-track">
           <div class="stack-logo-item"><div class="stack-logo-box"><img src="tools/figma.svg" alt="Figma" width="32" height="32"></div></div>
@@ -386,9 +307,12 @@
 
   <!-- Certifications Section -->
   <section class="section certs-section" id="certifications" aria-label="Certifications">
-    <div class="section-blur-white" aria-hidden="true"></div>
     <div class="container">
-      <span class="section-label fade-in">Certifications</span>
+      <div class="section-header fade-in">
+        <span class="section-label">Certifications &amp; Awards</span>
+        <h2 class="section-heading">Always Learning</h2>
+        <p class="section-sub">Certifications spanning AI, product strategy, agile, and enterprise systems.</p>
+      </div>
       <div class="certs-grid">
 
         <a href="cert-1.html" class="cert-card fade-in" aria-label="AI Product Strategy and Build Lab — Curious PM">
@@ -455,52 +379,32 @@
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <section class="section section-alt" id="contact" aria-label="Contact information">
-    <div class="section-blur-white" aria-hidden="true"></div>
-    <div class="container">
-      <div class="contact-wrapper fade-in">
-        <span class="section-label">Contact</span>
-        <h2 class="section-title">Let's build<br>something together</h2>
-        <p class="contact-sub">Open to product leadership roles, AI consulting, and interesting collaborations.</p>
-        <ul class="contact-links" aria-label="Contact links">
-          <li>
-            <a href="mailto:projjal.dhar@gmail.com" class="contact-link">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                <polyline points="22,6 12,13 2,6"/>
-              </svg>
-              projjal.dhar@gmail.com
-            </a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/projjaldhar" target="_blank" rel="noopener noreferrer" class="contact-link">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
-                <rect x="2" y="9" width="4" height="12"/>
-                <circle cx="4" cy="4" r="2"/>
-              </svg>
-              linkedin.com/in/projjaldhar
-            </a>
-          </li>
-          <li>
-            <a href="https://medium.com/@Projjal" target="_blank" rel="noopener noreferrer" class="contact-link">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
-                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
-              </svg>
-              medium.com/@Projjal
-            </a>
-          </li>
-        </ul>
+  <!-- CTA Section -->
+  <section class="cta-section" aria-label="Call to action">
+    <div class="cta-inner fade-in">
+      <h2 class="cta-heading">My product instincts and analytical approach create outcomes that actually move the needle.</h2>
+      <div class="cta-actions">
+        <a href="Projjal_Dhar_Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn-cta-primary">Download My Resume</a>
+        <a href="https://www.linkedin.com/in/projjaldhar" target="_blank" rel="noopener noreferrer" class="btn-cta-outline">Let's Connect</a>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
   <footer class="footer" role="contentinfo">
-    <div class="container">
-      <p>&copy; 2025 Projjal Dhar &middot; Dublin, Ireland</p>
+    <div class="footer-inner">
+      <a href="#hero" class="footer-logo">projjal.dhar</a>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="#work">Work</a>
+        <a href="#projects">Dev</a>
+        <a href="#certifications">Certifications</a>
+        <a href="Projjal_Dhar_Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+        <a href="https://www.linkedin.com/in/projjaldhar" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-copy">&copy; 2025 Projjal Dhar &middot; Dublin, Ireland</span>
+      <a href="mailto:projjal.dhar@gmail.com" class="footer-email">projjal.dhar@gmail.com</a>
     </div>
   </footer>
 
